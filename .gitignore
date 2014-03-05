@@ -14,7 +14,7 @@ build
 
 node_modules
 
-configs/database.json
+configs/*.json
 
 .vagrant
 *.box
