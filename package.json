@@ -19,6 +19,7 @@
   "dependencies": {
     "mysql": "~2.1.0",
     "async": "~0.2.10",
-    "neo4j": "~1.1.0"
+    "neo4j": "~1.1.0",
+    "nodemw": "git://github.com/shaoshing/nodemw"
   }
 }
