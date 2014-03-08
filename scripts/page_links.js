@@ -40,14 +40,19 @@ neo4j.connect("http://localhost:7474/db/data/", function(err, graph){
       };
 
       console.log("Generating CSV");
-      var content = "en_title, zh_title, tweet_links, weibo_links\n";
+      var csvTitle = "en_title, zh_title, tweet_links, weibo_links";
+      var csvLines = []
       for (var title in pages) {
-        content += title;
-        content += ", " + pages[title].tweet + ", " + pages[title].weibo + "\n";
+        var line = title;
+        line += ", " + pages[title].tweet + ", " + pages[title].weibo;
+        csvLines.push(line);
       };
+      var array = require("array");
+      csvLines = array(csvLines).sort();
 
+      var csvContent = csvTitle + "\n" + csvLines.join("\n");
       var fs = require("fs");
-      fs.writeFileSync("tmp/links.csv", content);
+      fs.writeFileSync("tmp/links.csv", csvContent);
 
       console.log("Done");
     }

@@ -23,6 +23,8 @@
     "nodemw": "git://github.com/shaoshing/nodemw",
     "request": "~2.34.0",
     "glob": "~3.2.9",
-    "neo4j-js": "0.0.8"
+    "neo4j-js": "0.0.8",
+    "string": "~1.8.0",
+    "array": "~0.4.3"
   }
 }
