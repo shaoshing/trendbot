@@ -19,3 +19,5 @@ configs/database.json
 
 .vagrant
 *.box
+
+tmp
