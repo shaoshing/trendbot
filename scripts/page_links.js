@@ -29,12 +29,16 @@ neo4j.connect("http://localhost:7474/db/data/", function(err, graph){
         var row = results[i];
         var title = row.enTitle + ", " + row.zhTitle;
         if(!pages[title]) pages[title] = {tweet: 0, weibo: 0};
-        if(!processedId[row.tweetId]){
-          processedId[row.tweetId] = true;
+
+        var tweetIdKey = title + row.tweetId;
+        if(!processedId[tweetIdKey]){
+          processedId[tweetIdKey] = true;
           pages[title].tweet += 1;
         }
-        if(!processedId[row.weiboId]){
-          processedId[row.weiboId] = true;
+
+        var weiboIdKey = title + row.weiboId;
+        if(!processedId[weiboIdKey]){
+          processedId[weiboIdKey] = true;
           pages[title].weibo += 1;
         }
       };
