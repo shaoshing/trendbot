@@ -86,10 +86,8 @@ for(var i = 0; i < hotSearches.length; i++){
 
 
 const MAX_LEVEL = 5;
-const MAX_PAGES = 40;
+const MAX_PAGES = 50;
 function buildPagesGraph(){
-  console.log("====== " + wikiPages.length + " pages");
-
   var selectedLevel;
   var page;
   var selectedPages = [];
@@ -111,6 +109,8 @@ function buildPagesGraph(){
       }
     }
   }
+
+  console.log("====== " + wikiPages.length + " pages, level " + selectedLevel);
 
   if(selectedPages.length === 0) return; // all pages has been processed
 
@@ -160,6 +160,8 @@ function buildPagesGraph(){
           if(processedWikiTitles[rows[i].title]) continue;
 
           var page = {id: rows[i].id, title: rows[i].title, level: selectedLevel+1};
+          if(page.level > MAX_LEVEL) continue;
+
           processedWikiTitles[page.title] = true;
 
           // build nodes
