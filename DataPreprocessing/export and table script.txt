@@ -1,0 +1,29 @@
+ mysqldump.exe --defaults-extra-file="c:\users\user\appdata\local\temp\tmp3leion.cnf"  --user=root --max_allowed_packet=1G --host=localhost --port=3306 --default-character-set=utf8 "trendbot" "pagecount_2_feb"
+
+
+
+
+
+CREATE TABLE `pagecount_12_feb` (
+  `pageid` int DEFAULT NULL,
+  
+`pagetitle` varchar(1024) DEFAULT NULL,
+  
+`pageviewcount` int DEFAULT NULL,
+  
+`datareturned` int DEFAULT NULL,
+  
+`date` date DEFAULT NULL
+  );
+
+
+
+
+CREATE TABLE `final_pagecount_feb` (
+  `pageid` int DEFAULT NULL,
+  `pagetitle` varchar(1024) DEFAULT NULL,
+  `pageviewcount` int DEFAULT NULL,
+ `date` date DEFAULT NULL
+  );
+
+
