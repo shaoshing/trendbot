@@ -1,3 +1,5 @@
+'use strict';
+
 var sample = require("../lib/sample");
 
 console.log("Loading weibo hashtags");

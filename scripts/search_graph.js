@@ -1,4 +1,4 @@
-
+'use strict';
 // TODO: when title is category
 
 var fs = require("fs");
@@ -6,10 +6,10 @@ var hotSearches = JSON.parse(fs.readFileSync("tmp/hot_search.json"));
 
 var wikiPages = [];
 var processedWikiTitles = {};
-var keywordCount = 0
+var keywordCount = 0;
 for (var i = 0; i < hotSearches.length; i++) {
   keywordCount += hotSearches[i].keywords.length;
-};
+}
 var processedKeywordCount = 0;
 
 for(var i = 0; i < hotSearches.length; i++){
@@ -41,7 +41,7 @@ for(var i = 0; i < hotSearches.length; i++){
             if(uTitle.charCodeAt(0) == 95)
               uTitle = uTitle.substr(1);
             sqlTitles.push(uTitle);
-          };
+          }
 
           var mysql = require('mysql');
           var sql = mysql.createConnection({
@@ -70,7 +70,7 @@ for(var i = 0; i < hotSearches.length; i++){
                 "MERGE k -[:MATCHES]-> p",
                 page, function(err){if(err) console.log(err);}
               );
-            };
+            }
 
             // notify done
             processedKeywordCount += 1;
@@ -79,30 +79,30 @@ for(var i = 0; i < hotSearches.length; i++){
           });
           sql.end();
         })(keywords[i], results[i], searchDate);
-      };
+      }
     });
   });
 }
 
 
-const MAX_LEVEL = 5;
-const MAX_PAGES = 50;
+var MAX_LEVEL = 4;
+var MAX_PAGES = 50;
 function buildPagesGraph(){
   var selectedLevel;
   var page;
   var selectedPages = [];
-  while(page = wikiPages.shift()){
+  while((page = wikiPages.shift()) !== undefined){
     // console.log("page [" + page.title + "], level: " + page.level);
     if(page.level > MAX_LEVEL) continue;
 
-    if(selectedPages.length === MAX_PAGES) break;
+    if(selectedPages.length > MAX_PAGES) break;
 
     if(!selectedLevel) {
       selectedLevel = page.level;
       selectedPages.push(page);
     }else{
       if(page.level === selectedLevel){
-        selectedPages.push(page)
+        selectedPages.push(page);
       }else{
         wikiPages.unshift(page);
         break;
@@ -118,7 +118,7 @@ function buildPagesGraph(){
   var S = require("string");
   for (var i = 0; i < selectedPages.length; i++) {
     pageIds.push(selectedPages[i].id);
-  };
+  }
 
   // console.log("processing level [" + selectedLevel + "] of ids [" + pageIds.join(", ") + "]");
 
@@ -179,12 +179,12 @@ function buildPagesGraph(){
           }
 
           wikiPages.push(page);
-        };
+        }
         // graphBatch.run();
         buildPagesGraph();
       });
     });
     sql.end();
-  })
+  });
 }
 

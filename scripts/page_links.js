@@ -1,4 +1,4 @@
-
+'use strict';
 
 var neo4j = require("neo4j-js");
 neo4j.connect("http://localhost:7474/db/data/", function(err, graph){
@@ -41,16 +41,16 @@ neo4j.connect("http://localhost:7474/db/data/", function(err, graph){
           processedId[weiboIdKey] = true;
           pages[title].weibo += 1;
         }
-      };
+      }
 
       console.log("Generating CSV");
       var csvTitle = "en_title, zh_title, tweet_links, weibo_links";
-      var csvLines = []
+      var csvLines = [];
       for (var title in pages) {
         var line = title;
         line += ", " + pages[title].tweet + ", " + pages[title].weibo;
         csvLines.push(line);
-      };
+      }
       var array = require("array");
       csvLines = array(csvLines).sort();
 

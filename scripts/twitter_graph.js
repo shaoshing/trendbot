@@ -1,4 +1,4 @@
-
+'use strict';
 
 // Connect database
 var mysql = require('mysql');
@@ -40,9 +40,9 @@ for (var i = 0; i < data.length; i++) {
   sample.readLines(d.file, function(line){
     hashtags.push(line);
   }, function(){ // done loading
-    const BATCH_SIZE = 100;
+    var BATCH_SIZE = 100;
     sql.connect();
-    var batchCount = Math.round(hashtags.length/BATCH_SIZE) + (hashtags.length % BATCH_SIZE == 0 ? 0 : 1);
+    var batchCount = Math.round(hashtags.length/BATCH_SIZE) + (hashtags.length % BATCH_SIZE === 0 ? 0 : 1);
 
     var processedCount = 0;
     for (var i = 0; i < batchCount; i++) {
@@ -64,11 +64,11 @@ for (var i = 0; i < data.length; i++) {
           tagMapping[humanizedTag] = tagMapping[humanizedTag] || [];
           tagMapping[humanizedTag].push(tag);
         }
-      };
+      }
 
       for (var tag in tagMapping) {
         escapedHashtags.push(mysql.escape(tag));
-      };
+      }
 
       //  query sql for wikipage
       var query = 'SELECT pages.title as title, pages.translation as translation '+
@@ -89,7 +89,7 @@ for (var i = 0; i < data.length; i++) {
 
             var graphBatch = graph.createBatch();
             for (var i = 0; i < rows.length; i++) {
-              var row = rows[i]
+              var row = rows[i];
               var pageNodeAttrs = {zh_title: row[d.zh_title], en_title: row[d.en_title]};
 
               //  create wiki node for matched page
@@ -113,7 +113,7 @@ for (var i = 0; i < data.length; i++) {
                   );
                 }());
               }
-            };
+            }
 
             console.log("Running cyphers");
             graphBatch.run();
@@ -122,8 +122,7 @@ for (var i = 0; i < data.length; i++) {
           });
         });
       })(tagMapping);
-    };
+    }
     sql.end();
   });
-};
-
+}
