@@ -6,90 +6,105 @@ var hotSearches = JSON.parse(fs.readFileSync('tmp/hot_search.json'));
 
 var wikiPages = [];
 var processedWikiTitles = {};
-var keywordCount = 0;
-for (var i = 0; i < hotSearches.length; i++) {
-  keywordCount += hotSearches[i].keywords.length;
-}
-var processedKeywordCount = 0;
 
-for(var i = 0; i < hotSearches.length; i++){
-  var searchDate = parseInt(hotSearches[i].date);
-  var keywords = hotSearches[i].keywords;
 
-  console.log('Searching for wiki titles for the keywords.');
+function createTask(i){
+  return function(notifyEndTaskCallback){
+    console.log("Start task for index ", i);
 
-  var async = require('async');
-  var graph = require('../lib/graph');
-  var neo4j = require('neo4j-js');
-  neo4j.connect('http://localhost:7474/db/data/', function (err, neo4j) {
-    async.map(keywords, graph.searchWikiTitles.bind(graph), function(err, results){
-      for (var i = 0; i < results.length; i++) {
-        if(!results[i]){ // null means error occurs while doing google search.
-          keywordCount--;
-          continue;
-        }
+    var searchDate = parseInt(hotSearches[i].date);
+    var keywords = hotSearches[i].keywords;
+    var keywordCount = keywords.length;
+    var processedKeywordCount = 0;
 
-        (function(keyword, titles, searchDate){
-          // create keyword node
-          neo4j.query('MERGE (:Keyword {name: {name}, date: {date}})', {name: keyword, date: searchDate}, function(){});
+    console.log('Searching for wiki titles for the keywords.');
 
-          // convert title
-          var sqlTitles = [];
-          for (var j = 0; j < titles.length; j++) {
-            sqlTitles.push(titles[j].title);
+    var async = require('async');
+    var graph = require('../lib/graph');
+    var neo4j = require('neo4j-js');
+    neo4j.connect('http://localhost:7474/db/data/', function (err, neo4j) {
+      async.map(keywords, graph.searchWikiTitles.bind(graph), function(err, results){
+        for (var i = 0; i < results.length; i++) {
+          if(!results[i]){ // null means error occurs while doing google search.
+            keywordCount--;
+            continue;
           }
 
-          var mysql = require('mysql');
-          var sql = mysql.createConnection({
-            'host': 'localhost',
-            'port': 3306,
-            'user': 'root',
-            'password': '',
-            'database': 'wiki-langs'
-          });
+          (function(keyword, titles, searchDate){
+            // create keyword node
+            neo4j.query('MERGE (:Keyword {name: {name}, date: {date}})', {name: keyword, date: searchDate}, function(){});
 
-          sql.connect();
-          // search for wiki pages in sql
-          var sqlStr = 'SELECT page_id as id, page_title as title FROM page '+
-            'WHERE page_namespace = 0 and page_title IN ('+mysql.escape(sqlTitles)+')';
-          sql.query({
-            sql: sqlStr,
-            typeCast: function (field, next) {
-              if (field.type === 'VAR_STRING') {
-                return field.string();
+            // convert title
+            var sqlTitles = [];
+            for (var j = 0; j < titles.length; j++) {
+              sqlTitles.push(titles[j].title);
+            }
+
+            var mysql = require('mysql');
+            var sql = mysql.createConnection({
+              'host': 'localhost',
+              'port': 3306,
+              'user': 'root',
+              'password': '',
+              'database': 'wiki-langs'
+            });
+
+            sql.connect();
+            // search for wiki pages in sql
+            var sqlStr = 'SELECT page_id as id, page_title as title FROM page '+
+              'WHERE page_namespace = 0 and page_title IN ('+mysql.escape(sqlTitles)+')';
+            sql.query({
+              sql: sqlStr,
+              typeCast: function (field, next) {
+                if (field.type === 'VAR_STRING') {
+                  return field.string();
+                }
+                return next();
               }
-              return next();
-            }
-          }, function(err, rows){
-            if(err) console.log(err);
+            }, function(err, rows){
+              if(err) console.log(err);
 
-            for (var i = 0; i < rows.length; i++) {
-              var page = {title: rows[i].title, level: 1, id: rows[i].id, keyword: keyword, keywordDate: searchDate};
-              wikiPages.push(page);
+              for (var i = 0; i < rows.length; i++) {
+                var page = {title: rows[i].title, level: 1, id: rows[i].id, keyword: keyword, keywordDate: searchDate};
+                wikiPages.push(page);
 
-              processedWikiTitles[page.title] = true;
+                processedWikiTitles[page.title] = true;
 
-              // create page node and link keyword and page
-              neo4j.query('MERGE (:Page {title: {title}, level: {level}, id: {id}})',
-                page, function(err){if(err) console.log(err);}
-              );
-              neo4j.query('MATCH (k:Keyword {name: {keyword}, date:{keywordDate}}), '+
-                '(p:Page {title: {title}, level: {level}, id: {id}}) MERGE k -[:MATCHES]-> p',
-                page, function(err){if(err) console.log(err);}
-              );
-            }
+                // create page node and link keyword and page
+                neo4j.query('MERGE (:Page {title: {title}, level: {level}, id: {id}})',
+                  page, function(err){if(err) console.log(err);}
+                );
+                neo4j.query('MATCH (k:Keyword {name: {keyword}, date:{keywordDate}}), '+
+                  '(p:Page {title: {title}, level: {level}, id: {id}}) MERGE k -[:MATCHES]-> p',
+                  page, function(err){if(err) console.log(err);}
+                );
+              }
 
-            // notify done
-            processedKeywordCount += 1;
-            if(processedKeywordCount === keywordCount)
-              buildPagesGraph();
-          });
-          sql.end();
-        })(keywords[i], results[i], searchDate);
-      }
+              // notify done
+              processedKeywordCount += 1;
+              if(processedKeywordCount === keywordCount){
+                notifyEndTaskCallback(null, true);
+                console.log("End of task for index ", i);
+              }
+            });
+            sql.end();
+          })(keywords[i], results[i], searchDate);
+        }
+      });
     });
-  });
+  };
 }
+
+var taskFuncs = [];
+for(var i = 0; i < hotSearches.length; i++){
+  taskFuncs.push(createTask(i));
+}
+
+var async = require('async');
+async.series(taskFuncs, function(){
+  console.log('All task done, building page graphs');
+  buildPagesGraph();
+});
 
 
 var MAX_LEVEL = 2;
@@ -165,6 +180,7 @@ function buildPagesGraph(){
       }
     }, function(err, rows){
       if(err) console.log(err);
+      var neo4j = require('neo4j-js');
       neo4j.connect('http://localhost:7474/db/data/', function (err, neo4j) {
         if(err) console.log(err);
 
