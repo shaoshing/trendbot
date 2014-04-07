@@ -2,7 +2,7 @@
 // TODO: when title is category
 
 var fs = require('fs');
-var hotSearches = JSON.parse(fs.readFileSync("tmp/hot_search.json"));
+var hotSearches = JSON.parse(fs.readFileSync('tmp/hot_search.json'));
 
 var wikiPages = [];
 var processedWikiTitles = {};
@@ -16,11 +16,11 @@ for(var i = 0; i < hotSearches.length; i++){
   var searchDate = parseInt(hotSearches[i].date);
   var keywords = hotSearches[i].keywords;
 
-  console.log("Searching for wiki titles for the keywords.");
+  console.log('Searching for wiki titles for the keywords.');
 
-  var async = require("async");
-  var graph = require("../lib/graph");
-  var neo4j = require("neo4j-js");
+  var async = require('async');
+  var graph = require('../lib/graph');
+  var neo4j = require('neo4j-js');
   neo4j.connect('http://localhost:7474/db/data/', function (err, neo4j) {
     async.map(keywords, graph.searchWikiTitles.bind(graph), function(err, results){
       for (var i = 0; i < results.length; i++) {
@@ -31,7 +31,7 @@ for(var i = 0; i < hotSearches.length; i++){
 
         (function(keyword, titles, searchDate){
           // create keyword node
-          neo4j.query("MERGE (:Keyword {name: {name}, date: {date}})", {name: keyword, date: searchDate}, function(){});
+          neo4j.query('MERGE (:Keyword {name: {name}, date: {date}})', {name: keyword, date: searchDate}, function(){});
 
           // convert title
           var sqlTitles = [];
@@ -41,16 +41,17 @@ for(var i = 0; i < hotSearches.length; i++){
 
           var mysql = require('mysql');
           var sql = mysql.createConnection({
-            "host": "localhost",
-            "port": 3306,
-            "user": "root",
-            "password": "",
-            "database": "wiki-langs"
+            'host': 'localhost',
+            'port': 3306,
+            'user': 'root',
+            'password': '',
+            'database': 'wiki-langs'
           });
 
           sql.connect();
           // search for wiki pages in sql
-          var sqlStr = "SELECT page_id as id, page_title as title FROM page WHERE page_namespace = 0 and page_title IN ("+mysql.escape(sqlTitles)+")";
+          var sqlStr = 'SELECT page_id as id, page_title as title FROM page '+
+            'WHERE page_namespace = 0 and page_title IN ('+mysql.escape(sqlTitles)+')';
           sql.query({
             sql: sqlStr,
             typeCast: function (field, next) {
@@ -69,11 +70,11 @@ for(var i = 0; i < hotSearches.length; i++){
               processedWikiTitles[page.title] = true;
 
               // create page node and link keyword and page
-              neo4j.query("MERGE (:Page {title: {title}, level: {level}, id: {id}})",
+              neo4j.query('MERGE (:Page {title: {title}, level: {level}, id: {id}})',
                 page, function(err){if(err) console.log(err);}
               );
-              neo4j.query("MATCH (k:Keyword {name: {keyword}, date:{keywordDate}}), (p:Page {title: {title}, level: {level}, id: {id}}) "+
-                "MERGE k -[:MATCHES]-> p",
+              neo4j.query('MATCH (k:Keyword {name: {keyword}, date:{keywordDate}}), '+
+                '(p:Page {title: {title}, level: {level}, id: {id}}) MERGE k -[:MATCHES]-> p',
                 page, function(err){if(err) console.log(err);}
               );
             }
@@ -116,7 +117,7 @@ function buildPagesGraph(){
     }
   }
 
-  console.log("====== " + wikiPages.length + " pages, level " + selectedLevel);
+  console.log('====== ' + wikiPages.length + ' pages, level ' + selectedLevel);
 
   if(selectedPages.length === 0) return; // all pages has been processed
 
@@ -127,7 +128,7 @@ function buildPagesGraph(){
 
   // console.log("processing level [" + selectedLevel + "] of ids [" + pageIds.join(", ") + "]");
 
-  var wiki = require("../lib/wiki");
+  var wiki = require('../lib/wiki');
   wiki.getPageInternalLinks(pageIds, function(results){
     var nextLevelTitles = [];
     var titleMapParentPageId = {};
@@ -144,15 +145,16 @@ function buildPagesGraph(){
 
     var mysql = require('mysql');
     var sql = mysql.createConnection({
-      "host": "localhost",
-      "port": 3306,
-      "user": "root",
-      "password": "",
-      "database": "wiki-langs"
+      'host': 'localhost',
+      'port': 3306,
+      'user': 'root',
+      'password': '',
+      'database': 'wiki-langs'
     });
 
     sql.connect();
-    var sqlStr = "SELECT page_id as id, page_title as title FROM page WHERE page_namespace = 0 and page_title IN ("+mysql.escape(nextLevelTitles)+")";
+    var sqlStr = 'SELECT page_id as id, page_title as title '+
+      'FROM page WHERE page_namespace = 0 and page_title IN ('+mysql.escape(nextLevelTitles)+')';
     sql.query({
       sql: sqlStr,
       typeCast: function (field, next) {
@@ -177,7 +179,7 @@ function buildPagesGraph(){
           processedWikiTitles[page.title] = true;
 
           // build nodes
-          neo4j.query("MERGE (:Page {id: {id}, title: {title}, level: {level}})", page, function(err){
+          neo4j.query('MERGE (:Page {id: {id}, title: {title}, level: {level}})', page, function(err){
             if(err) console.log(err);
           });
 
@@ -185,7 +187,8 @@ function buildPagesGraph(){
           var parentPageId = titleMapParentPageId[page.title];
           if(parentPageId){
             // console.log("parentsPageId: "+ parentPageId + " child " + page.id + " " + page.title);
-            neo4j.query("MATCH (p:Page {id: {parentId}}), (cp:Page {id: {childId}}) MERGE cp -[:LEVEL_"+(selectedLevel+1)+"]-> p",
+            neo4j.query('MATCH (p:Page {id: {parentId}}), (cp:Page {id: {childId}}) MERGE cp -[:LEVEL_'+
+              (selectedLevel+1)+']-> p',
               {parentId: parseInt(parentPageId), childId: page.id}, function(err){if(err) console.log(err);}
             );
           }
