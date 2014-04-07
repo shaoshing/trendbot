@@ -1,7 +1,7 @@
 'use strict';
 // TODO: when title is category
 
-var fs = require("fs");
+var fs = require('fs');
 var hotSearches = JSON.parse(fs.readFileSync("tmp/hot_search.json"));
 
 var wikiPages = [];
@@ -34,13 +34,9 @@ for(var i = 0; i < hotSearches.length; i++){
           neo4j.query("MERGE (:Keyword {name: {name}, date: {date}})", {name: keyword, date: searchDate}, function(){});
 
           // convert title
-          var S = require("string");
           var sqlTitles = [];
           for (var j = 0; j < titles.length; j++) {
-            var uTitle = S(titles[j]).underscore().s.toLowerCase();
-            if(uTitle.charCodeAt(0) == 95)
-              uTitle = uTitle.substr(1);
-            sqlTitles.push(uTitle);
+            sqlTitles.push(titles[j].title);
           }
 
           var mysql = require('mysql');
@@ -49,13 +45,23 @@ for(var i = 0; i < hotSearches.length; i++){
             "port": 3306,
             "user": "root",
             "password": "",
-            "database": "wiki"
+            "database": "wiki-langs"
           });
 
           sql.connect();
           // search for wiki pages in sql
-          sql.query("SELECT id, title FROM pages WHERE language = 0 AND title IN ("+mysql.escape(sqlTitles)+")", function(err, rows){
+          var sqlStr = "SELECT page_id as id, page_title as title FROM page WHERE page_namespace = 0 and page_title IN ("+mysql.escape(sqlTitles)+")";
+          sql.query({
+            sql: sqlStr,
+            typeCast: function (field, next) {
+              if (field.type === 'VAR_STRING') {
+                return field.string();
+              }
+              return next();
+            }
+          }, function(err, rows){
             if(err) console.log(err);
+
             for (var i = 0; i < rows.length; i++) {
               var page = {title: rows[i].title, level: 1, id: rows[i].id, keyword: keyword, keywordDate: searchDate};
               wikiPages.push(page);
@@ -85,7 +91,7 @@ for(var i = 0; i < hotSearches.length; i++){
 }
 
 
-var MAX_LEVEL = 4;
+var MAX_LEVEL = 2;
 var MAX_PAGES = 50;
 function buildPagesGraph(){
   var selectedLevel;
@@ -115,7 +121,6 @@ function buildPagesGraph(){
   if(selectedPages.length === 0) return; // all pages has been processed
 
   var pageIds = [];
-  var S = require("string");
   for (var i = 0; i < selectedPages.length; i++) {
     pageIds.push(selectedPages[i].id);
   }
@@ -130,9 +135,7 @@ function buildPagesGraph(){
       var pageId = results[i].pageId;
       var links = results[i].links;
       for (var j = 0; j < links.length; j++) {
-        var uTitle = S(links[j]).underscore().s.toLowerCase();
-        if(uTitle.charCodeAt(0) == 95)
-          uTitle = uTitle.substr(1);
+        var uTitle = links[j].replace(/ /g, '_');
         nextLevelTitles.push(uTitle);
         titleMapParentPageId[uTitle] = pageId;
       }
@@ -145,11 +148,20 @@ function buildPagesGraph(){
       "port": 3306,
       "user": "root",
       "password": "",
-      "database": "wiki"
+      "database": "wiki-langs"
     });
 
     sql.connect();
-    sql.query("SELECT id, title FROM pages WHERE language = 0 AND title IN ("+mysql.escape(nextLevelTitles)+")", function(err, rows){
+    var sqlStr = "SELECT page_id as id, page_title as title FROM page WHERE page_namespace = 0 and page_title IN ("+mysql.escape(nextLevelTitles)+")";
+    sql.query({
+      sql: sqlStr,
+      typeCast: function (field, next) {
+        if (field.type === 'VAR_STRING') {
+          return field.string();
+        }
+        return next();
+      }
+    }, function(err, rows){
       if(err) console.log(err);
       neo4j.connect('http://localhost:7474/db/data/', function (err, neo4j) {
         if(err) console.log(err);
@@ -170,7 +182,7 @@ function buildPagesGraph(){
           });
 
           // add relations
-          var parentPageId = titleMapParentPageId[page.title.toLowerCase()];
+          var parentPageId = titleMapParentPageId[page.title];
           if(parentPageId){
             // console.log("parentsPageId: "+ parentPageId + " child " + page.id + " " + page.title);
             neo4j.query("MATCH (p:Page {id: {parentId}}), (cp:Page {id: {childId}}) MERGE cp -[:LEVEL_"+(selectedLevel+1)+"]-> p",
