@@ -2,7 +2,8 @@
 // TODO: when title is category
 
 var fs = require('fs');
-var hotSearches = JSON.parse(fs.readFileSync('configs/hot_search.json'));
+var hotSearchesJson = fs.readFileSync('configs/hot_search.json').toString().replace(/\/\/.+\n/g, '');
+var hotSearches = JSON.parse(hotSearchesJson);
 
 var wikiPages = [];
 var processedWikiTitles = {};
