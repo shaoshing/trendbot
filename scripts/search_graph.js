@@ -2,7 +2,7 @@
 // TODO: when title is category
 
 var fs = require('fs');
-var hotSearches = JSON.parse(fs.readFileSync('tmp/hot_search.json'));
+var hotSearches = JSON.parse(fs.readFileSync('configs/hot_search.json'));
 
 var wikiPages = [];
 var processedWikiTitles = {};
@@ -10,7 +10,7 @@ var processedWikiTitles = {};
 
 function createTask(i){
   return function(notifyEndTaskCallback){
-    console.log("Start task for index ", i);
+    console.log('Start task for index ', i);
 
     var searchDate = parseInt(hotSearches[i].date);
     var keywords = hotSearches[i].keywords;
@@ -32,7 +32,8 @@ function createTask(i){
 
           (function(keyword, titles, searchDate){
             // create keyword node
-            neo4j.query('MERGE (:Keyword {name: {name}, date: {date}})', {name: keyword, date: searchDate}, function(){});
+            neo4j.query('MERGE (:Keyword {name: {name}, date: {date}})',
+                {name: keyword, date: searchDate}, function(){});
 
             // convert title
             var sqlTitles = [];
