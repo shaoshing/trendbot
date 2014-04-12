@@ -205,8 +205,7 @@ function buildPagesGraph(){
           var parentPageId = titleMapParentPageId[page.title];
           if(parentPageId){
             // console.log("parentsPageId: "+ parentPageId + " child " + page.id + " " + page.title);
-            neo4j.query('MATCH (p:Page {id: {parentId}}), (cp:Page {id: {childId}}) MERGE cp -[:LEVEL_'+
-              (selectedLevel+1)+']-> p',
+            neo4j.query('MATCH (p:Page {id: {parentId}}), (cp:Page {id: {childId}}) MERGE cp <-[:OUTGOING]- p',
               {parentId: parseInt(parentPageId), childId: page.id}, function(err){if(err) console.log(err);}
             );
           }
