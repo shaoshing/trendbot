@@ -278,169 +278,169 @@
   //   "Michael Dunn"
   // ]
   // },
+  // {
+  // "date":"20140210",
+  // "keywords":[
+  //   "Blake Griffin",
+  //   "Laurence Fishburne",
+  //   "Julia Mancuso",
+  //   "Dumb Starbucks",
+  //   "Bob Costas eye",
+  //   "Nancy Motes",
+  //   "Atlanta weather",
+  //   "Westminster dog show",
+  //   "curling",
+  //   "Valentines Day",
+  //   "Kate Hansen",
+  //   "Flappy Bird Creator",
+  //   "True Detective",
+  //   "Chris Kattan",
+  //   "Charlie White",
+  //   "Alex Bilodeau",
+  //   "JR Celski",
+  //   "Wral",
+  //   "Shayne Lamas",
+  //   "Monica Lewinsky"
+  // ]
+  // },
+  // {
+  // "date":"20140209",
+  // "keywords":[
+  //   "Flappy Bird",
+  //   "Walking Dead",
+  //   "Michael Sam",
+  //   "Paul McCartney",
+  //   "Gracie Gold",
+  //   "Jamie Anderson",
+  //   "Shia LaBeouf",
+  //   "Olga Graf",
+  //   "John Lennon",
+  //   "Medal Count 2014 Olympics",
+  //   "Dave Grohl",
+  //   "Jason Brown",
+  //   "Torah Bright",
+  //   "Seattle Weather"
+  // ]
+  // },
+  // {
+  // "date":"20140208",
+  // "keywords":[
+  //   "Marcus Smart",
+  //   "Ashley Wagner",
+  //   "Yulia Lipnitskaya",
+  //   "Olympic Medal Count 2014",
+  //   "Bode Miller",
+  //   "medal count",
+  //   "Olympic medal count",
+  //   "Sage Kotsenburg",
+  //   "Tara Lipinski",
+  //   "Hannah Kearney",
+  //   "The Sochi 2014 Winter Olympics United States",
+  //   "Jackie Robinson",
+  //   "Olympic Ring Mishap",
+  //   "Cheyenne Woods",
+  //   "Mark McMorris",
+  //   "Nbc Olympic Schedule",
+  //   "NBC Sports"
+  // ]
+  // },
+  // {
+  // "date":"20140207",
+  // "keywords":[
+  //   "Lego Movie",
+  //   "Woody Allen",
+  //   "Sochi Russia",
+  //   "Bob Costas Eye",
+  //   "2014 Winter Olympics medal standings",
+  //   "AMBER Alert",
+  //   "Shaun White",
+  //   "Dakota Johnson",
+  //   "Olympics Schedule",
+  //   "Thiago Silva",
+  //   "Farrah Abraham",
+  //   "Olympic Schedule",
+  //   "Monuments Men",
+  //   "Ted Agu",
+  //   "Jimmy Fallon",
+  //   "Kris Letang",
+  //   "Sonic Boom",
+  //   "Portland Weather",
+  //   "Vampire Academy"
+  // ]
+  // },
+  // {
+  // "date":"20140206",
+  // "keywords":[
+  //   "Sochi",
+  //   "Olympics",
+  //   "Jay Leno",
+  //   "Olympic Charter",
+  //   "NBC Olympics",
+  //   "Bob Marley",
+  //   "Janet Mock"
+  // ]
+  // },
+  // {
+  // "date":"20140205",
+  // "keywords":[
+  //   "DMX",
+  //   "Sochi",
+  //   "Curt Schilling",
+  //   "Elizabeth Hurley",
+  //   "Shaun White",
+  //   "Pussy Riot",
+  //   "Sochi Russia",
+  //   "PECO",
+  //   "Seahawks parade",
+  //   "MTA",
+  //   "Rivals",
+  //   "Cristiano Ronaldo",
+  //   "Clay Aiken",
+  //   "Paul George",
+  //   "Elizabeth Banks",
+  //   "Adobe Flash Player",
+  //   "NJ Transit",
+  //   "National Signing Day 2014",
+  //   "national signing day",
+  //   "Malik McDowell"
+  // ]
+  // },
+  // {
+  // "date":"20140204",
+  // "keywords":[
+  //   "Biggest Loser",
+  //   "Bill Nye debate",
+  //   "Satya Nadella",
+  //   "Facebook Lookback",
+  //   "Facebook movie",
+  //   "CM Punk",
+  //   "Richard Bull",
+  //   "World Cancer Day"
+  // ]
+  // },
+  // {
+  // "date":"20140203",
+  // "keywords":[
+  //   "Jared Lorenzen",
+  //   "Super Bowl Rigged",
+  //   "IRS",
+  //   "Best Super Bowl Commercials 2014",
+  //   "Superbowl Rigged",
+  //   "Budweiser Puppy Love",
+  //   "Coke Commercial",
+  //   "Facebook Paper",
+  //   "MTA",
+  //   "News 12",
+  //   "Valentines Day",
+  //   "Winter Olympics",
+  //   "Brooklyn Nine Nine",
+  //   "Radio Shack Super Bowl Commercial",
+  //   "Vanderpump Rules",
+  //   "Miley Cyrus W Magazine"
+  // ]
+  // },
 
   // Need google search cache.
-  {
-  "date":"20140210",
-  "keywords":[
-    "Blake Griffin",
-    "Laurence Fishburne",
-    "Julia Mancuso",
-    "Dumb Starbucks",
-    "Bob Costas eye",
-    "Nancy Motes",
-    "Atlanta weather",
-    "Westminster dog show",
-    "curling",
-    "Valentines Day",
-    "Kate Hansen",
-    "Flappy Bird Creator",
-    "True Detective",
-    "Chris Kattan",
-    "Charlie White",
-    "Alex Bilodeau",
-    "JR Celski",
-    "Wral",
-    "Shayne Lamas",
-    "Monica Lewinsky"
-  ]
-  },
-  {
-  "date":"20140209",
-  "keywords":[
-    "Flappy Bird",
-    "Walking Dead",
-    "Michael Sam",
-    "Paul McCartney",
-    "Gracie Gold",
-    "Jamie Anderson",
-    "Shia LaBeouf",
-    "Olga Graf",
-    "John Lennon",
-    "Medal Count 2014 Olympics",
-    "Dave Grohl",
-    "Jason Brown",
-    "Torah Bright",
-    "Seattle Weather"
-  ]
-  },
-  {
-  "date":"20140208",
-  "keywords":[
-    "Marcus Smart",
-    "Ashley Wagner",
-    "Yulia Lipnitskaya",
-    "Olympic Medal Count 2014",
-    "Bode Miller",
-    "medal count",
-    "Olympic medal count",
-    "Sage Kotsenburg",
-    "Tara Lipinski",
-    "Hannah Kearney",
-    "The Sochi 2014 Winter Olympics United States",
-    "Jackie Robinson",
-    "Olympic Ring Mishap",
-    "Cheyenne Woods",
-    "Mark McMorris",
-    "Nbc Olympic Schedule",
-    "NBC Sports"
-  ]
-  },
-  {
-  "date":"20140207",
-  "keywords":[
-    "Lego Movie",
-    "Woody Allen",
-    "Sochi Russia",
-    "Bob Costas Eye",
-    "2014 Winter Olympics medal standings",
-    "AMBER Alert",
-    "Shaun White",
-    "Dakota Johnson",
-    "Olympics Schedule",
-    "Thiago Silva",
-    "Farrah Abraham",
-    "Olympic Schedule",
-    "Monuments Men",
-    "Ted Agu",
-    "Jimmy Fallon",
-    "Kris Letang",
-    "Sonic Boom",
-    "Portland Weather",
-    "Vampire Academy"
-  ]
-  },
-  {
-  "date":"20140206",
-  "keywords":[
-    "Sochi",
-    "Olympics",
-    "Jay Leno",
-    "Olympic Charter",
-    "NBC Olympics",
-    "Bob Marley",
-    "Janet Mock"
-  ]
-  },
-  {
-  "date":"20140205",
-  "keywords":[
-    "DMX",
-    "Sochi",
-    "Curt Schilling",
-    "Elizabeth Hurley",
-    "Shaun White",
-    "Pussy Riot",
-    "Sochi Russia",
-    "PECO",
-    "Seahawks parade",
-    "MTA",
-    "Rivals",
-    "Cristiano Ronaldo",
-    "Clay Aiken",
-    "Paul George",
-    "Elizabeth Banks",
-    "Adobe Flash Player",
-    "NJ Transit",
-    "National Signing Day 2014",
-    "national signing day",
-    "Malik McDowell"
-  ]
-  },
-  {
-  "date":"20140204",
-  "keywords":[
-    "Biggest Loser",
-    "Bill Nye debate",
-    "Satya Nadella",
-    "Facebook Lookback",
-    "Facebook movie",
-    "CM Punk",
-    "Richard Bull",
-    "World Cancer Day"
-  ]
-  },
-  {
-  "date":"20140203",
-  "keywords":[
-    "Jared Lorenzen",
-    "Super Bowl Rigged",
-    "IRS",
-    "Best Super Bowl Commercials 2014",
-    "Superbowl Rigged",
-    "Budweiser Puppy Love",
-    "Coke Commercial",
-    "Facebook Paper",
-    "MTA",
-    "News 12",
-    "Valentines Day",
-    "Winter Olympics",
-    "Brooklyn Nine Nine",
-    "Radio Shack Super Bowl Commercial",
-    "Vanderpump Rules",
-    "Miley Cyrus W Magazine"
-  ]
-  },
   {
   "date":"20140202",
   "keywords":[
