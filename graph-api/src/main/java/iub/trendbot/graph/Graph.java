@@ -27,8 +27,6 @@ public class Graph {
     }
 
     public ArrayList<Page> getOutgoingPages(String pageTitle){
-        //
-
         ArrayList<Page> pages = new ArrayList<Page>();
 
         String cypher = String.format(
@@ -40,11 +38,14 @@ public class Graph {
     }
 
     public ArrayList<Page> getIncomingPages(String pageTitle){
-        // MATCH (p:Page {title: "KGTV"}) <-[:INCOMING]- page RETURN page
-
         ArrayList<Page> pages = new ArrayList<Page>();
 
-        return pages;
+        String cypher = String.format(
+                "MATCH (p:Page {title: \"%s\"}) <-[:INCOMING]- page RETURN page.id, page.title",
+                Client.escape(pageTitle));
+
+        JSONObject result = client().query(cypher);
+        return convertCypherResultToPages(result);
     }
 
     public ArrayList<Page> getMainCategoryPages(String pageTitle){

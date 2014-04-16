@@ -11,11 +11,12 @@ pids
 logs
 results
 build
+graph-api/target
 
 node_modules
 
-configs/neo4j.json
-configs/database.json
+**/configs/neo4j.json
+**/configs/database.json
 
 .vagrant
 *.box

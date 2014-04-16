@@ -19,6 +19,10 @@ public class Examples {
         System.out.println("\n================ Testing graph.getOutgoingPages");
         pages = graph.getOutgoingPages("KGTV");
         printPages(pages);
+
+        System.out.println("\n================ Testing graph.getOutgoingPages");
+        pages = graph.getIncomingPages("Curling,_Newfoundland_and_Labrador");
+        printPages(pages);
     }
 
     private static void printPages(ArrayList<Page> pages){
