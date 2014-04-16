@@ -49,7 +49,7 @@ start_page_index = 0
   links_count = mysql_client.query(
       make_sql('COUNT(*)', PROCESS_MAIN_CATEGORY, level1_id)).first['COUNT(*)'].to_i
   batch_size = 100
-  processed_links_count = 0
+  processed_links_count = 10500
 
   while processed_links_count < links_count
     puts "-- processing #{processed_links_count} of #{links_count}"
@@ -64,13 +64,13 @@ start_page_index = 0
     links.each do |link|
       unless created_ids_cache[link['page_id'].to_s]
         neo4j_client.execute_query("
-            MERGE (p:Page {id: #{link['page_id']}, title: \"#{link['page_title']}\"})")
+            MERGE (p:Page {id: #{link['page_id']}, title: \"#{mysql_client.escape(link['page_title'])}\"})")
         created_ids_cache[link['page_id'].to_s] = true
       end
 
       unless created_ids_cache[link['category_id'].to_s]
         neo4j_client.execute_query("
-            MERGE (p:Category {id: #{link['category_id']}, title: \"#{link['category_title']}\", main: true})")
+            MERGE (p:Category {id: #{link['category_id']}, title: \"#{mysql_client.escape(link['category_title'])}\", main: true})")
         created_ids_cache[link['category_id'].to_s] = true
       end
 
