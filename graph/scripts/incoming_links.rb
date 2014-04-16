@@ -17,13 +17,13 @@ neo4j_client = Neography::Rest.new
 level1_title_map_id = {}
 
 File.read('graph/data/level1_pages.txt').lines.each do |line|
-  id, title = line.split(', ')
+  id, title = line.split(', ', 2)
   level1_title_map_id[title.upcase] = id
 end
 
 BATCH_SIZE = 200
 total_page_count = mysql_client.query('SELECT count(*) FROM Page;').first['count(*)'].to_i
-processed_page_count = 142_500
+processed_page_count = 557_700
 
 while processed_page_count < total_page_count
   puts "Processing #{processed_page_count + BATCH_SIZE} of #{total_page_count}"
