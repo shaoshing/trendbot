@@ -27,8 +27,6 @@ public class Graph {
     }
 
     public ArrayList<Page> getOutgoingPages(String pageTitle){
-        ArrayList<Page> pages = new ArrayList<Page>();
-
         String cypher = String.format(
                 "MATCH (p:Page {title: \"%s\"}) -[:OUTGOING]-> page RETURN page.id, page.title",
                 Client.escape(pageTitle));
@@ -38,8 +36,6 @@ public class Graph {
     }
 
     public ArrayList<Page> getIncomingPages(String pageTitle){
-        ArrayList<Page> pages = new ArrayList<Page>();
-
         String cypher = String.format(
                 "MATCH (p:Page {title: \"%s\"}) <-[:INCOMING]- page RETURN page.id, page.title",
                 Client.escape(pageTitle));
@@ -48,20 +44,22 @@ public class Graph {
         return convertCypherResultToPages(result);
     }
 
-    public ArrayList<Page> getMainCategoryPages(String pageTitle){
-        //MATCH (p:Page {title: "KGTV"}) <-[:INCLUDES]- (c:Category {MainCategory: TRUE})
+    public ArrayList<Page> getCategoryPages(String pageTitle, int level){
+        String cypher = String.format(
+                "MATCH (p:Page {title: \"%s\"}) -[:L1_BELONGS_TO]-> (c:Category {level: %d}) <-[:BELONGS_TO]- (pp:Page) " +
+                        "RETURN pp.id, pp.title, c.id, c.title, c.level",
+                Client.escape(pageTitle), level);
 
+        JSONObject result = client().query(cypher);
         ArrayList<Page> pages = new ArrayList<Page>();
-
+        JSONArray rows = (JSONArray)result.get("data");
+        for(int i = 0; i < rows.size(); i++){
+            JSONArray row = (JSONArray)rows.get(i);
+            Page page = new Page((Long)row.get(0), (String)row.get(1), (Long)row.get(2), (String)row.get(3), (Long)row.get(4));
+            pages.add(page);
+        }
         return pages;
     }
-
-    public HashMap<Category, ArrayList<Page>> getSubCategoryPages(String pageTitle){
-        HashMap<Category, ArrayList<Page>> result = new HashMap<Category, ArrayList<Page>>();
-
-        return result;
-    }
-
 
     private Client client;
     private Client client(){

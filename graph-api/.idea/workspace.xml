@@ -77,15 +77,21 @@
       <file leaf-file-name="Graph.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/iub/trendbot/graph/Graph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="62" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1350">
+            <state line="57" column="124" selection-start="2124" selection-end="2124" vertical-scroll-proportion="0.0" vertical-offset="535" max-vertical-offset="1320">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#779#785#0" expanded="true" />
-                <element signature="e#1188#1194#0" expanded="true" />
-                <element signature="e#1692#1698#0" expanded="true" />
-                <element signature="e#1880#1907#0" expanded="true" />
-                <element signature="e#2245#2251#0" expanded="true" />
+                <element signature="e#1836#1842#0" expanded="true" />
+                <element signature="e#2498#2504#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Page.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/iub/trendbot/graph/Page.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="45" selection-start="613" selection-end="613" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -93,7 +99,7 @@
       <file leaf-file-name="Examples.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Examples.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="17" selection-start="213" selection-end="213" vertical-scroll-proportion="0.30120483" vertical-offset="0" max-vertical-offset="600">
+            <state line="30" column="85" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.6084337" vertical-offset="147" max-vertical-offset="795">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,11 +133,11 @@
         <option value="$PROJECT_DIR$/src/main/java/iub/trendbot/graph/trendbot/Client.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/iub/trendbot/graph/Category.java" />
-        <option value="$PROJECT_DIR$/src/main/java/iub/trendbot/graph/Page.java" />
         <option value="$PROJECT_DIR$/src/main/java/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/iub/trendbot/graph/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Examples.java" />
         <option value="$PROJECT_DIR$/src/main/java/iub/trendbot/graph/Graph.java" />
+        <option value="$PROJECT_DIR$/src/main/java/iub/trendbot/graph/Page.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Examples.java" />
       </list>
     </option>
   </component>
@@ -519,7 +525,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="56" y="22" width="1384" height="878" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -581,13 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/iub/trendbot/graph/Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="27" selection-start="262" selection-end="262" vertical-scroll-proportion="0.39156628" vertical-offset="0" max-vertical-offset="498">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/iub/trendbot/graph/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="13" selection-start="1578" selection-end="1578" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1350">
@@ -599,21 +598,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/iub/trendbot/graph/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="62" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1350">
+        <state line="57" column="124" selection-start="2124" selection-end="2124" vertical-scroll-proportion="0.0" vertical-offset="535" max-vertical-offset="1320">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#779#785#0" expanded="true" />
-            <element signature="e#1188#1194#0" expanded="true" />
-            <element signature="e#1692#1698#0" expanded="true" />
-            <element signature="e#1880#1907#0" expanded="true" />
-            <element signature="e#2245#2251#0" expanded="true" />
+            <element signature="e#1836#1842#0" expanded="true" />
+            <element signature="e#2498#2504#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/iub/trendbot/graph/Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="45" selection-start="613" selection-end="613" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Examples.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="17" selection-start="213" selection-end="213" vertical-scroll-proportion="0.30120483" vertical-offset="0" max-vertical-offset="600">
+        <state line="30" column="85" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.6084337" vertical-offset="147" max-vertical-offset="795">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

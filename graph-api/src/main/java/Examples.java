@@ -23,12 +23,25 @@ public class Examples {
         System.out.println("\n================ Testing graph.getOutgoingPages");
         pages = graph.getIncomingPages("Curling,_Newfoundland_and_Labrador");
         printPages(pages);
+
+        System.out.println("\n================ Testing graph.getCategoryPages level 2");
+        pages = graph.getCategoryPages("27_Club", 2);
+        printPagesAndCategories(pages);
+
+        System.out.println("\n================ Testing graph.getCategoryPages level 3");
+        pages = graph.getCategoryPages("Prince", 3);
+        printPagesAndCategories(pages);
     }
 
     private static void printPages(ArrayList<Page> pages){
         for(Page page : pages){
-            System.out.println(page.id);
-            System.out.println(page.title);
+            System.out.printf("%d, %s\n", page.id, page.title);
+        }
+    }
+
+    private static void printPagesAndCategories(ArrayList<Page> pages){
+        for(Page page : pages){
+            System.out.printf("%d, %s -> %d, %s\n", page.id, page.title, page.category_id, page.category_title);
         }
     }
 }
