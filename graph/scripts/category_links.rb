@@ -49,7 +49,7 @@ start_page_index = 0
   links_count = mysql_client.query(
       make_sql('COUNT(*)', PROCESS_MAIN_CATEGORY, level1_id)).first['COUNT(*)'].to_i
   batch_size = 100
-  processed_links_count = 10500
+  processed_links_count = 0
 
   while processed_links_count < links_count
     puts "-- processing #{processed_links_count} of #{links_count}"
@@ -81,11 +81,10 @@ start_page_index = 0
               (p:Page {id: #{link['page_id']}}),
               (l:Page {id: #{level1_id}}),
               (c:Category {id: #{link['category_id']}})
-            MERGE p -[:BELONGS_TO]-> c <-[:L1_BELONGS_TO]- l")
+            MERGE p -[:BELONGS_TO]-> c
+            MERGE c <-[:L1_BELONGS_TO]- l")
         created_ids_cache[key] = true
       end
     end
   end
 end
-
-
