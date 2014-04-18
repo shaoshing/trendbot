@@ -17,13 +17,13 @@ neo4j_client = Neography::Rest.new
 level1_title_map_id = {}
 
 File.read('graph/data/level1_pages.txt').lines.each do |line|
-  id, title = line.split(', ', 2)
+  id, title = line.strip.split(', ', 2)
   level1_title_map_id[title.upcase] = id
 end
 
 BATCH_SIZE = 200
 total_page_count = mysql_client.query('SELECT count(*) FROM Page;').first['count(*)'].to_i
-processed_page_count = 557_700
+processed_page_count = 1372900 # 1_162_700
 
 while processed_page_count < total_page_count
   puts "Processing #{processed_page_count + BATCH_SIZE} of #{total_page_count}"
@@ -39,10 +39,12 @@ while processed_page_count < total_page_count
       # [[Neurodevelopmental disorder|disorder of neural development]]
       link = link.first.split('|').first
       next if link.nil?
+
       link = link.upcase
       next unless level1_title_map_id[link]
+
+      puts ' -- ' + page['name'] + ' > ' + link
       links << { page: page, level1_page_id: level1_title_map_id[link] }
-      puts page['name']
     end
   end
 
