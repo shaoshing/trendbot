@@ -23,7 +23,7 @@ end
 
 BATCH_SIZE = 200
 total_page_count = mysql_client.query('SELECT count(*) FROM Page;').first['count(*)'].to_i
-processed_page_count = 1372900 # 1_162_700
+processed_page_count = 1513100 # 1_162_700
 
 while processed_page_count < total_page_count
   puts "Processing #{processed_page_count + BATCH_SIZE} of #{total_page_count}"
@@ -54,7 +54,7 @@ while processed_page_count < total_page_count
     page_title = link[:page]['name']
     level1_page_id = link[:level1_page_id]
     neo4j_client.execute_query("
-      MERGE (p:Page {id: #{page_id}, title: \"#{page_title}\"})")
+      MERGE (p:Page {id: #{page_id}, title: \"#{mysql_client.escape(page_title)}\"})")
     # Create relation
     neo4j_client.execute_query("
         MATCH (p:Page {id: #{page_id}}), (l:Page {id: #{level1_page_id}})

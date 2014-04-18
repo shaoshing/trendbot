@@ -7,7 +7,6 @@ require 'json'
 
 CATEGORY_LEVEL = 3
 
-db_configs = JSON.parse(File.read 'graph/configs/database.json')
 mysql_client = Mysql2::Client.new(
   host: 'localhost',
   username: 'root',
@@ -19,7 +18,7 @@ category_titles = []
 
 previous_level_categories = File.read("graph/data/level#{CATEGORY_LEVEL - 1}_categories.txt").lines
 current_level_categories = File.read("graph/data/level#{CATEGORY_LEVEL}_categories.txt").lines
-(current_level_categories-previous_level_categories).each do |line|
+(current_level_categories - previous_level_categories).each do |line|
   id, title = line.strip.split(', ', 2)
   category_titles << title
   category_title_map_id[title] = id
@@ -48,7 +47,10 @@ neo4j_client = Neography::Rest.new
 created_ids_cache = {}
 
 pages = File.read('graph/data/level1_pages.txt').lines
-start_page_index = 0
+
+# Skipped
+# level 2 106
+start_page_index = 350
 (start_page_index...pages.size).each do |index|
   line = pages[index]
   level1_id, level1_title = line.strip.split(', ', 2)
