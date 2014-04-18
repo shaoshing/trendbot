@@ -1,853 +1,889 @@
-1001537, Mathematical_notation
-1003632, Science_occupations
-1004110, Humanities
-10045785, Humanities_journals
-1005970, Humanities_occupations
-1006140, Agricultural_occupations
-10079940, Dates
-1008581, Operations_research
-1009209, Information
-10099038, Human_reproduction
-1013214, Chronology
-1013366, Centuries
-1013657, Political_philosophy
-1016013, Terminology
-10172577, Cultural_trends
-1024179, Arts_venues
-1030891, Globalization
-10327838, Cultural_education
-1034234, Fictional_objects
-10420868, Mathematics_literature
-10427407, Environmental_standards
-10525413, Society_in_fiction
-1055691, Learning
-1055905, Self
-1056532, Hygiene
-10569761, Educational_projects
-10618262, Lean_concepts
-1065465, Law_stubs
-1071627, Surveying
-1079671, Politics_stubs
-1081533, Visual_arts
-10853203, Conceptual_systems
-1093141, Social_groups
-10938808, Social_systems
-10939195, Systems
-10947954, Gender_in_language
-10958482, Technology_systems
-1096373, Philosophy_of_law
-10973493, Political_controversies
-1098276, Mathematical_terminology
-1103405, Natural_resources
-11090202, Redirects_from_people
-1111700, Human_geography
-11134875, Area_studies
-11135742, Farming_tools
-11154230, Extraterrestrial_life
-1119166, Agriculture_stubs
-11223487, Ritual
-1123736, Legal_terms
-1125732, Legal_entities
-11273485, History_education
-11277715, Public_opinion
-11331697, History_awards
-11407003, Projects
-1141194, Canon_law
-11422179, Law_libraries
-1152426, Philosophy_of_mathematics
-11637206, Agrarianism
-1166293, Writing
-1169815, Medical_research
-11705201, Cultural_critics
-11719938, Education_theory
-11874300, Impossible_objects
-11886695, Science_and_engineering_awards
-1194342, Perfumery
-1203387, Business_law
-1222842, Technical_communication
-1226568, Business_ethics
-1227023, Pricing
-1228459, Business_intelligence
-1228999, Business_models
-12319380, Philosophy_of_history
-1232608, Promotion_and_marketing_communications
-1232620, Consumer_behaviour
-1240968, Legal_education
-1241037, Taxation
-1250918, Metaphors
-1258736, Medicine_stubs
-12631737, Health_by_city
-1265016, Geochronology
-1273447, Words
-12766286, Technology_transfer
-12777176, Technology_and_inventions_by_region
-12795625, Social_media
-12803333, Business_qualifications
-12806577, Business_education
-1286258, Technology_folklore
-12885527, Philosophy_of_technology
-1289327, Language_games
-13000668, Health-related_lists
-13078054, Fields_of_history
-13083550, Business_conferences
-13275069, Judgment
-13333671, Sports_instruction
-13361665, Government_and_politics_images
-13443890, Small_business
-13485666, Philosophy_and_culture
-13531067, Conceptions_of_self
-1356182, Chronicles
-1357047, Sports_technology
-13704997, Geographic_literature
-1374489, Evolution
-13822772, Legal_awards
-13825326, Education_awards
-1388304, Office_work
-13887492, Business_documents
-13887504, Statements
-1389404, Technology_stubs
-13909818, Agricultural_establishments
-13993074, Language_policy
-14078337, Social_events
-14211114, Arts_awards
-14219042, Humanities_awards
-1427229, Medical_education
-14285085, Speech_and_language_pathology
-14368158, Memes
-14393408, Impeachment
-1440139, Anniversaries
-1440141, Images_of_people
-1445941, Education_by_country
-1449968, Medical_specialties
-14507875, Soil
-1453027, History_of_sports
-14541050, Political_events
-14543951, Sports_rules_and_regulations
-14567652, Mating_systems
-14580502, Sports_controversies
-14593990, Industrial_agriculture
-14625904, Natural_monuments
-14658985, Medical_and_health_organizations
-14659176, Cultural_organizations
-1471921, Images_by_scientific_discipline
-14729916, Censorship_in_the_arts
-14750746, Environmental_history
-1481320, Technology_images
-1486284, Vocabulary
-1489599, Sports_culture
-1489601, Sports_organisations
-1489690, Sports_terminology
-15072896, Language-related_awards
-15160074, Geography_organizations
-15457132, Curricula
-15474891, Environment_and_society
-1556636, Legal_research
-1570101, Socioeconomics
-15757902, Environment_templates
-15778405, Self-reference
-1585045, Health_law
-1585128, Statutory_law
-15854681, Voting
-15877642, Environmental_issues
-15878432, Mobile_technology
-15965971, Geography_and_place_templates
-1600172, Oaths
-1617394, Sexuality_and_society
-16324388, Legal_costs
-1633936, Society
-1645754, Environmental_science
-1645950, Cultural_history
-1656699, Law_lists
-16585122, Technology_evangelism
-16627560, Aspects_of_individual_lives
-16703584, Places
-16705267, Diseases_and_disorders
-16705284, Medicine_in_society
-1672740, Education_stubs
-16760492, Pre-Columbian_cultural_areas
-1676945, Mathematics_stubs
-16777187, Medicine_templates
-16951202, Health_by_individual
-16984427, History_of_agriculture
-17000943, Agriculture_in_society
-17004206, Agricultural_terminology
-17038002, Technology_development
-17200193, Technology_by_type
-1724212, Prehistory
-17242161, Sociology_of_law
-17265684, Environmental_health
-17266395, Environmental_terminology
-17321675, Phenomena
-17329958, Politics-related_lists
-1733859, Media_studies
-1744470, Business_software
-1754928, Elementary_mathematics
-17567748, Fictional_life_forms
-17583447, Politics_of_country_subdivisions
-17643840, Health_by_continent
-17716287, Business_journalism
-17742400, Arts_by_place
-17781477, Human_body
-1786721, Environmental_engineering
-17910938, Humor_research
-17985617, Social_responsibility
-18050175, Categories_by_time
-1821011, History_images
-1822668, Geographic_images
-1826208, Cultural_studies
-18364955, Fertilizers
-18400066, Health_fields
-1847555, Energy_storage
-18476554, Agricultural_land
-18526113, Trade
-18551617, Human_power
-18567302, Categories_by_sport
-18623462, Transport_culture
-1865685, Culture_stubs
-1874224, Mathematics_and_culture
-18835615, Natural_events
-1883977, Religion_and_society
-18891503, Women_and_the_arts
-18907287, Cultural_generations
-1891719, Fictional_technology
-18948438, Health_movements
-1896016, Political_corruption
-18960497, Medical_technology
-18984719, Culture_by_location
-18985014, History_by_location
-1926287, Matter
-19307021, Scientific_folklore
-19307992, Conflict_in_society
-1948437, Packaging
-1954501, Educational_organizations
-19571326, Scientific_instruments
-1963117, Theories
-19866745, Agricultural_research
-19948937, Set_indices_on_sports
-2007272, Business_stubs
-20076879, Fictional_science
-20084530, Natural_environment_based_therapies
-20102160, Sport_by_country
-20132205, Sports_by_country
-2020818, Competition
-20257147, Commemoration
-2032160, History_by_ethnic_group
-20392066, Scientific_speculation
-20537176, Days_of_the_year
-2054828, Natural_history
-2060070, Aesthetics
-20796274, Language_software
-20813658, Religious_belief_and_doctrine
-2100400, Postindustrial_society
-21015099, Technological_comparison
-21024994, Harvest
-21041682, Business_planning
-21064591, Ceramic_art
-21082158, Sociology_of_culture
-21116311, Home_economics
-2120643, Mergers_and_acquisitions
-21249925, Horticulture_and_gardening
-21259329, Nostalgia
-21421283, Health_policy
-2157472, Science_in_society
-2157920, Technology_in_society
-21722732, Political_culture
-21724300, Debuts
-2177360, Images_from_sports
-21879722, Circumvention
-21991760, Scientific_theories
-2214607, Domesticated_plants
-22165423, Conceptualism
-2233830, Medical_lists
-22357105, Lists_of_environmental_topics
-22395178, Environmental_conferences
-22481632, Music_geography
-2251204, Geographical_technology
-2251696, Vocational_education
-22746207, Arts_districts
-22793354, Early_species_of_Homo
-22811075, Museum_education
-2281247, History_stubs
-2286515, Language_acquisition
-22870229, Environmental_media
-2298488, Agronomy
-2299740, Business_terms
-2300055, Composting
-2300147, Agriculture_by_country
-2304602, Irrigation
-23047269, Slaughter_methods
-23120838, Health_insurance
-23147049, Dispositional_beliefs
-23195730, Political_timelines
-23242540, Legal_professions
-2325168, Politics_by_region
-2325193, Political_people
-2325248, Politics_by_issue
-23267028, Luxury
-2339061, Mathematical_examples
-2348948, Business_lists
-23508439, Cultural_exchange
-23530196, Law_museums
-23596516, Sports_by_type
-2364548, Environmental_economics
-23681731, Human_names
-2389032, Life
-24016426, Business_analysis
-24096503, Agricultural_education
-24124092, Gastronomy
-24183630, Sports_by_country_of_origin
-24209717, Men_and_the_arts
-24286346, Business_libraries
-24459928, Meat_industry
-24585646, Mountaineering_and_health
-24594583, Films_about_technology
-24727902, Vernacular_geography
-2477717, Education_by_subject
-2478148, Educational_stages
-2478321, Education_issues
-2478638, Teaching
-24816140, Cultural_media
-2488034, Educational_materials
-24921117, Weight_loss
-24946646, Environmental_protection
-24970377, Agroecology
-24980157, Concepts_by_field
-2524202, Human_behavior
-25345834, Environmental_statistics
-25381444, Health_officials
-25399957, Agriculture_and_the_environment
-25499148, Technicians
-25505074, Water_and_society
-25536293, Sports_occupations_and_roles
-25540756, Sports_and_games_portal
-25552267, Fictional_society
-25655723, Hypothetical_technology
-2568433, Business_opportunities
-2576891, Science_parks
-2577072, Technology_neologisms
-2608613, Business_process
-2611474, Social_institutions
-26148472, Language_mechanics
-26281540, Agriculture_awards
-2634715, Vacuum
-26441320, Environment_by_location
-2644475, High-technology_business_districts
-26562487, Cultural_concepts
-26743152, Conceptual_models
-26784036, Playing_field_surfaces
-26840325, Coherentism
-2690886, Environments
-2693630, Health_by_country
-2693936, Sports-related_lists
-27006405, Anti-social_behaviour
-27111192, Practice_of_law
-27248985, Mathematical_concepts
-2727945, Political_organizations
-27290300, Human–animal_interaction
-27421250, Philosophy_of_education
-27478516, Cultural_events
-27479318, Cultural_aspects_of_death
-27486124, Arts_events
-27501955, Foundationalism
-27509873, Tragedy
-27536896, Wikipedia_books_on_culture
-27537005, Wikipedia_books_on_arts
-27537186, Wikipedia_books_on_nature
-27537434, Wikipedia_books_on_technology
-27537633, Wikipedia_books_on_society
-27539107, Wikipedia_books_on_geography
-27544736, Wikipedia_books_on_people
-27548898, Wikipedia_books_on_education
-27562025, Wikipedia_books_on_language
-27624683, Humanities_education
-2766046, Events
-27974196, Philosophy_and_society
-28085670, Life_skills
-28085964, Gender_and_education
-28115761, Films_about_language_and_translation
-28198337, Rural_society
-28353267, Persuasion
-28359282, Legal_concepts
-2850090, Alternate_reality
-2871217, Educational_psychology
-28728704, Articles_about_multiple_people
-28746478, Cultural_hegemony
-28893553, Humanities_institutes
-28990032, Agricultural_health_and_safety
-2908575, History_organizations
-29216632, Medicine_portal
-29226418, Documentary_films_about_words_and_language
-29320082, Science_and_technology_by_location
-2933492, Nationality
-2934593, Collaboration
-29390869, Agricultural_production
-2955178, Oral_communication
-29565412, Comparative_politics
-2957649, Traditional_medicine
-2959852, Natural_materials
-29671305, Spirituality_and_the_arts
-29921833, Education_rights
-29931868, Edicts
-2999304, Museology
-30077631, Arts_by_culture
-3031321, Health_informatics
-3041418, Nature_writers
-30539950, Depictions_of_people
-3061643, Crafts
-30628568, Natural_language_and_computing
-30804539, Cultural_politics
-30819861, Culture-related_controversies
-30930499, Student_farms
-3094002, Arts_genres_by_country_or_nationality
-31038144, Agriculture_by_type
-31212249, Language_interpretation
-3136395, Educational_technology
-3144983, Study_of_religion
-31454449, Human–machine_interaction
-31580725, Quantity
-31580983, Etiology
-31768366, School_and_classroom_behaviour
-31774489, Business_failures
-31887701, Race_and_society
-31966613, Legal_reform
-32080122, Culture-bound_syndromes
-32201407, People_in_agriculture
-3228046, Equipment
-3236392, International_business
-32366664, Agricultural_organizations
-32416275, LGBT_and_education
-3248624, History_of_education
-3256544, Technology_websites
-32607076, Environmental_policy
-32607707, Agricultural_policy
-32723197, Language_competitions
-3274358, Environment_stubs
-32746897, Works_about_the_arts
-32792203, Works_about_nature
-32847388, Scientific_buildings
-32872957, Environmental_data
-32999859, Nature_and_religion
-3304038, Sport_by_city
-33118759, Hypothetical_life_forms
-3313852, Communication_of_falsehoods
-33209447, Obsolete_technologies
-33395167, Digital_humanities
-33484752, Sports_administration
-3350476, Prehistoric_life
-3350883, Science_and_technology_studies
-33639839, Agricultural_robotics
-33734763, Fields_of_mathematics
-33847891, Society_portal
-33973460, Spaceflight_concepts
-33992823, Art_terminology
-34088419, History_portal
-34090929, Mathematics_portal
-34163707, Legacies
-34213741, Real-time_technology
-34235418, Human_biology
-34237989, Indexes_of_biographical_topics
-34299644, Arts_databases
-34394149, Scares
-3450392, Physical_phenomena
-34514882, Environment_by_year
-34559856, Mathematical_problem_solving
-3463166, Science_and_law
-34750450, Environmental_timelines
-34796186, Environmental_management
-34859018, Life_in_space
-34865045, Naturalism_(philosophy)
-34909056, Indexes_of_environmental_topics
-34955601, Culinary_arts
-34955640, Physical_exercise
-34981064, Environmental_certification
-3501863, Sports_records_and_statistics
-35018983, Social_problems
-35040279, Art_competitions
-35044007, Agriculture-related_lists
-35053680, Disability_in_the_arts
-35074971, Women_in_society
-35085280, Facilities_and_organizations_of_science
-35092769, Conceptual_distinctions
-35115782, Deviance_and_social_control
-35321010, Wikipedia_categories_named_after_people
-35533421, Translation_and_interpreting_schools
-3553530, Education_policy
-35554368, Hemispheres_of_the_Earth
-35612550, Determinants_of_health
-35722025, Intellectual_competitions
-3585888, Business_continuity_and_disaster_recovery
-35880954, Health_care
-35937081, Global_natural_environment
-3598507, Science_education
-36051985, Hebrew_language_chronology_works
-3608033, Technology_companies
-36099394, Race_(human_classification)
-36182107, Personhood
-36281381, Statistics_of_education
-36312376, Belief_revision
-36320965, Dogmatism
-36392182, Law_by_time
-36468932, Sources_of_law
-3659008, Social_issues
-3659012, Social_change
-36590513, Encyclopedias_of_culture_and_ethnicity
-36723401, Urban_society
-3674304, Scientific_terminology
-36845612, Environment_by_subject
-36859285, The_arts_and_politics
-36928571, Education_activism
-36948305, Politics_portal
-36966409, Technical_specifications
-37077698, Politics_templates
-37185019, Disability_studies
-37191364, Business_in_the_United_Kingdom
-3723669, Alternative_education
-37275026, Spouses
-37533062, People_associated_with_technology
-37535285, Biology_and_culture
-37547424, Scientific_laws
-37569823, Legal_works
-37569934, Works_about_politics
-37570027, Political_works
-37574925, Innovation_economics
-37579674, Works_about_agriculture
-37595625, Works_about_law
-37604629, Works_about_sports
-37609380, Scientific_works
-37609639, Works_about_science
-37609878, Works_about_business
-37676013, Works_about_health
-37694757, Law_by_city
-37727666, Art_and_culture_law
-37752985, Business_in_the_United_States
-37755827, Consensus_reality
-37773067, Sports_journalism
-37934903, Humanoids
-37989948, Race_and_education
-38063613, Sports_strategy
-38162642, Environmental_agencies
-38173171, Medical_terminology
-38173327, Education_terminology
-3826004, Sports_venues
-38263090, Land_systems
-38285423, Sports_portal
-38301528, Governance
-38349629, Environmental_studies
-38350034, Environmental_research
-38362400, Environment_disambiguation_pages
-38390455, People_associated_with_the_arts
-38401703, Political_violence
-38425257, Environmental_humanities
-38612527, Legal_issues
-38823012, Business_in_Turkey
-39015576, Social_commentary
-39030351, Health_disparities
-39045486, Abstract_object_theory
-39069125, Topics_in_the_arts
-39073760, Education_by_method
-39073801, Education_scandals_and_controversies
-3916327, Legal_categories_of_people
-39178049, Business_districts
-39301110, Funerary_art
-39412843, Words_and_phrases_by_culture
-39427145, Interpretation
-39435803, Borderline_life
-39547643, Protoscience
-39579340, People_categories_by_parameter
-39653242, University_programs
-39776911, Clothes_in_politics
-39792749, Scientific_phenomena
-3981960, Scientific_disciplines
-39900859, Audiovisual_art
-39927321, Islam_and_sport
-4000026, Emergency_laws
-40050394, Technological_pollution
-40105071, Politics_by_period
-4017539, Business_films
-40190384, History_painters
-40249123, Quality_of_life
-40254056, Society_by_location
-40316372, Theory_of_medicine
-40413468, Agricultural_terraces
-40455234, Euthenics
-40540908, Clinical_medicine
-40554931, Practice_of_medicine
-40650560, Technology_by_year
-40737379, Scientific_exploration
-40743991, Cleanroom_technology
-40833863, Racism_in_sport
-40883218, Business_culture
-41023719, Science_commemorations
-41133291, Indigenous_health
-41155375, Doubt
-4116088, Technology_strategy
-41202060, Technology_events
-4129676, Political_history
-41337078, Cognitive_inertia
-41337187, Cognitive_dissonance
-41370324, World_population
-41429824, Ignorance
-4145201, Agricultural_buildings
-41452436, Education-related_lists
-41460038, Sports_by_continent
-4165191, Environmental_design
-4174841, Students
-4175296, Education_by_location
-4176446, Education_finance
-4179396, Educational_programs
-4179591, Educational_environment
-4189120, Training
-4196458, Educational_research
-4196488, Educational_leadership
-4196539, Educational_personnel
-4230011, Education_in_popular_culture
-4231514, Health_stubs
-4273075, Educational_assessment_and_evaluation
-4295481, Arts_organizations
-4299106, Sports_seasons
-4303236, History-related_lists
-4367933, Sports_templates
-4402815, Chronologists
-4404631, Human_habitats
-4435370, Decades
-4477241, Agricultural_chemicals
-4504597, Business_timelines
-4535976, Entrepreneurship
-4536131, Sales
-4550651, Law_templates
-4594075, Agricultural_labor
-4612800, History_of_geography
-4674278, Arts-related_lists
-4676118, Geography-related_lists
-4677661, Science-related_lists
-4677671, Society-related_lists
-4677674, Technology-related_lists
-4684939, Mathematics-related_lists
-4704135, Sport_and_politics
-4787400, Reproduction
-4825537, Accountancy
-4831571, Social_history
-4852121, Health_economics
-4866835, Agriculture_by_region
-4892515, Arts
-4935817, Nature-related_lists
-4945845, Community
-5119729, Civil_society
-5183917, Structure
-5638026, Arts_occupations
-5731205, Cultures
-5768462, Sports_science
-5774648, Geography_portals
-5782300, Geography_by_place
-5783724, Social_work
-5882486, Technology_literature
-5883021, Branches_of_geography
-5884865, Science_portals
-5885060, Culture_portals
-5885188, Technology_portals
-5887742, Politics_portals
-5904860, Society_portals
-5904973, Education_portals
-5905127, Law_portals
-5922972, Principles
-5947851, Educational_administration
-6123888, Health_education
-6185426, Philology
-6222478, Political_communication
-6232412, Political_activism
-6235455, People_in_health_professions
-6277368, Biography
-6440102, Urban_agriculture
-6518123, Cultural_spheres_of_influence
-6551784, Business_economics
-6583567, Law_by_issue
-6583801, Legal_organizations
-6584073, Law_by_region
-6584363, Legal_communication
-6584434, Legal_action
-6627672, Technological_change
-6749727, Environmental_awards
-6797656, Health_research
-691008, People
-691262, Ecology
-691623, Fictional_characters
-691777, Sustainability
-691810, Philosophy
-692008, Literature
-692454, Human_rights
-692675, Biology
-692694, Religion
-692704, Legal_ethics
-692903, Engineering
-692981, Fiction
-693016, Entertainment
-693555, History
-693661, Mathematicians
-693798, Linguistics
-693803, Political_science
-694001, Common_law
-694063, Lawyers
-694290, Timelines
-694611, Lists_of_people
-694748, Languages
-694860, Food_and_drink
-694861, Culture
-694870, Crops
-694953, Scientists
-695027, Politics
-695042, Social_sciences
-695118, Companies
-696248, Traditions
-696763, Education
-696823, Comedy
-696920, Gender_studies
-697022, Natural_sciences
-697609, Government
-698248, Administration
-698269, Clubs_and_societies
-698284, Tourism
-698466, Calendars
-699239, Alternative_medicine
-699593, Sociology
-700114, Economics
-700292, Scientific_method
-700421, Scientific_classification
-700911, Information_technology
-700914, Knowledge
-701859, Politics_by_country
-702087, Commerce
-702708, Historians
-702802, Case_law
-705232, Urban_studies_and_planning
-705897, Ethnic_groups
-706779, Domesticated_animals
-706788, Family
-707163, Health_deities
-707333, History_of_science
-707335, History_of_technology
-707341, Legal_history
-708101, Organizations
-708305, Sports_trophies_and_awards
-709071, Drama
-7092216, Jurisprudence
-709243, Communication
-7104071, Redirects_from_alternative_languages
-710663, Natural_hazards
-715355, Cultural_anthropology
-716572, Military
-716918, Paleontology
-718211, Law_enforcement
-718562, Delusional_disorder
-718764, Finance
-724233, Political_theories
-724603, Jurists
-724833, Geocodes
-7339293, Education_economics
-735168, Spirituality
-737037, Behavior
-737047, Environmentalism
-737090, Clothing
-737124, Conservation
-737226, Superstitions
-738565, Symbols
-7390225, Creative_works
-742657, Businesspeople
-744038, Philosophy_of_language
-751381, Health
-7540641, Procurement
-754965, Earth
-755020, Labor
-7595800, Business_taxes
-7605468, Legal_disputes
-7709598, Language_and_mysticism
-771152, Business
-771308, Social_philosophy
-772270, Philosophy_of_science
-7772093, Sports_business
-784409, Marketing
-787284, Management
-787548, Ethnicity
-7904093, Landscape
-7916961, Dating_methods
-795966, Rhetoric
-7982551, Politics_awards
-799934, Medical_equipment
-8017451, Language
-803231, Home
-8066813, Ethnic_studies
-8085294, Sport_by_continent
-811694, Artificial_life
-8132363, Fringe_science
-8141824, Fictional_human_races
-8175652, Business_and_industry_awards
-8176556, Feminism_and_society
-8184738, Environmental_technology
-8281012, Arts_portals
-828361, Pseudoscience
-8284449, Business_families
-8285908, Sports_events
-838036, Mathematical_tools
-842146, Human_evolution
-843378, Language_stubs
-844329, Movements
-853425, Academia
-857591, People_stubs
-8582333, Business_and_economics_portal
-8584316, Science_and_culture
-8592882, Policy
-8641969, Agricultural_insects
-8698297, Health_activists
-8700702, Geography_awards_and_competitions
-871525, Industry
-884430, Years
-885076, Automation
-885378, Dispute_resolution
-886561, Millennia
-8899078, Organisms
-8938523, Political_schisms
-8954702, Free_educational_software
-895801, History_by_topic
-895831, History_by_period
-896992, Business_organizations
-8985254, Law_by_forum
-902386, Abstraction
-905806, Activism
-905931, Business_aircraft
-907401, Qualifications
-908424, Rights
-910633, Positions_of_authority
-9112556, Technology_podcasts
-921954, Death
-923111, Human_appearance
-925351, Historical_eras
-9281114, Education_literature
-928145, Sports_by_year
-931823, Geography_stubs
-932302, Disability
-933437, Science_stubs
-9360169, Technical_universities_and_colleges
-9372156, Religion_and_education
-937322, Sports_stubs
-9383834, Business_of_visual_arts
-939795, Law_by_country
-943436, Sports_museums
-948833, Months
-9502151, Agricultural_pests
-9503617, Geography_education
-952890, Days
-956054, Belief
-9564514, Technology_trade_associations
-9575689, Greenwashing
-9592135, Cultural_lists
-964864, Health_sciences
-966983, Applied_mathematics
-968416, Exploration
-975508, Art_stubs
-976276, Tree_of_life
-977183, Veterinary_medicine
-981229, Human_development
-9885425, Types_of_scientific_fallacy
-991222, Performing_arts
-9962372, Geography_terminology
-996465, Geographers
-9997124, Pseudo-scholarship
+39045486 , Abstract_object_theory , 24980271 , Concepts
+902386 , Abstraction , 24980271 , Concepts
+853425 , Academia , 696763 , Education
+4825537 , Accountancy , 771152 , Business
+905806 , Activism , 695027 , Politics
+698248 , Administration , 771152 , Business
+2060070 , Aesthetics , 4892515 , Arts
+11637206 , Agrarianism , 694871 , Agriculture
+4145201 , Agricultural_buildings , 694871 , Agriculture
+4477241 , Agricultural_chemicals , 694871 , Agriculture
+24096503 , Agricultural_education , 694871 , Agriculture
+13909818 , Agricultural_establishments , 694871 , Agriculture
+28990032 , Agricultural_health_and_safety , 694871 , Agriculture
+8641969 , Agricultural_insects , 694871 , Agriculture
+4594075 , Agricultural_labor , 694871 , Agriculture
+18476554 , Agricultural_land , 694871 , Agriculture
+1006140 , Agricultural_occupations , 694871 , Agriculture
+32366664 , Agricultural_organizations , 694871 , Agriculture
+9502151 , Agricultural_pests , 694871 , Agriculture
+32607707 , Agricultural_policy , 694871 , Agriculture
+29390869 , Agricultural_production , 694871 , Agriculture
+19866745 , Agricultural_research , 694871 , Agriculture
+33639839 , Agricultural_robotics , 694871 , Agriculture
+17004206 , Agricultural_terminology , 694871 , Agriculture
+40413468 , Agricultural_terraces , 694871 , Agriculture
+35044007 , Agriculture-related_lists , 694871 , Agriculture
+25399957 , Agriculture_and_the_environment , 694871 , Agriculture
+26281540 , Agriculture_awards , 694871 , Agriculture
+2300147 , Agriculture_by_country , 694871 , Agriculture
+4866835 , Agriculture_by_region , 694871 , Agriculture
+31038144 , Agriculture_by_type , 694871 , Agriculture
+17000943 , Agriculture_in_society , 694871 , Agriculture
+17000943 , Agriculture_in_society , 1633936 , Society
+1119166 , Agriculture_stubs , 694871 , Agriculture
+24970377 , Agroecology , 694871 , Agriculture
+2298488 , Agronomy , 694871 , Agriculture
+2850090 , Alternate_reality , 956054 , Belief
+3723669 , Alternative_education , 696763 , Education
+699239 , Alternative_medicine , 692348 , Medicine
+1440139 , Anniversaries , 1013214 , Chronology
+27006405 , Anti-social_behaviour , 1633936 , Society
+966983 , Applied_mathematics , 690747 , Mathematics
+11134875 , Area_studies , 1004110 , Humanities
+37727666 , Art_and_culture_law , 694861 , Culture
+37727666 , Art_and_culture_law , 4892515 , Arts
+35040279 , Art_competitions , 4892515 , Arts
+975508 , Art_stubs , 4892515 , Arts
+33992823 , Art_terminology , 4892515 , Arts
+28728704 , Articles_about_multiple_people , 691008 , People
+811694 , Artificial_life , 2389032 , Life
+4892515 , Arts , 694861 , Culture
+4892515 , Arts , 1004110 , Humanities
+4674278 , Arts-related_lists , 4892515 , Arts
+14211114 , Arts_awards , 4892515 , Arts
+30077631 , Arts_by_culture , 4892515 , Arts
+17742400 , Arts_by_place , 4892515 , Arts
+34299644 , Arts_databases , 4892515 , Arts
+22746207 , Arts_districts , 4892515 , Arts
+27486124 , Arts_events , 4892515 , Arts
+3094002 , Arts_genres_by_country_or_nationality , 4892515 , Arts
+5638026 , Arts_occupations , 4892515 , Arts
+4295481 , Arts_organizations , 4892515 , Arts
+8281012 , Arts_portals , 4892515 , Arts
+1024179 , Arts_venues , 4892515 , Arts
+16627560 , Aspects_of_individual_lives , 691008 , People
+39900859 , Audiovisual_art , 4892515 , Arts
+885076 , Automation , 696648 , Technology
+737037 , Behavior , 2389032 , Life
+956054 , Belief , 24980271 , Concepts
+36312376 , Belief_revision , 956054 , Belief
+6277368 , Biography , 691008 , People
+692675 , Biology , 2389032 , Life
+37535285 , Biology_and_culture , 694861 , Culture
+39435803 , Borderline_life , 2389032 , Life
+5883021 , Branches_of_geography , 693800 , Geography
+771152 , Business , 1633936 , Society
+905931 , Business_aircraft , 771152 , Business
+24016426 , Business_analysis , 771152 , Business
+8582333 , Business_and_economics_portal , 771152 , Business
+8175652 , Business_and_industry_awards , 771152 , Business
+13083550 , Business_conferences , 771152 , Business
+3585888 , Business_continuity_and_disaster_recovery , 771152 , Business
+40883218 , Business_culture , 771152 , Business
+39178049 , Business_districts , 771152 , Business
+13887492 , Business_documents , 771152 , Business
+6551784 , Business_economics , 771152 , Business
+12806577 , Business_education , 771152 , Business
+1226568 , Business_ethics , 771152 , Business
+31774489 , Business_failures , 771152 , Business
+8284449 , Business_families , 771152 , Business
+4017539 , Business_films , 771152 , Business
+38823012 , Business_in_Turkey , 771152 , Business
+37191364 , Business_in_the_United_Kingdom , 771152 , Business
+37752985 , Business_in_the_United_States , 771152 , Business
+1228459 , Business_intelligence , 771152 , Business
+17716287 , Business_journalism , 771152 , Business
+1203387 , Business_law , 771152 , Business
+24286346 , Business_libraries , 771152 , Business
+2348948 , Business_lists , 771152 , Business
+1228999 , Business_models , 771152 , Business
+9383834 , Business_of_visual_arts , 771152 , Business
+2568433 , Business_opportunities , 771152 , Business
+896992 , Business_organizations , 771152 , Business
+21041682 , Business_planning , 771152 , Business
+2608613 , Business_process , 771152 , Business
+12803333 , Business_qualifications , 771152 , Business
+1744470 , Business_software , 771152 , Business
+2007272 , Business_stubs , 771152 , Business
+7595800 , Business_taxes , 771152 , Business
+2299740 , Business_terms , 771152 , Business
+4504597 , Business_timelines , 771152 , Business
+742657 , Businesspeople , 771152 , Business
+698466 , Calendars , 1013214 , Chronology
+1141194 , Canon_law , 691928 , Law
+702802 , Case_law , 691928 , Law
+18567302 , Categories_by_sport , 693708 , Sports
+18050175 , Categories_by_time , 1013214 , Chronology
+14729916 , Censorship_in_the_arts , 4892515 , Arts
+1013366 , Centuries , 1013214 , Chronology
+21064591 , Ceramic_art , 4892515 , Arts
+1356182 , Chronicles , 1013214 , Chronology
+4402815 , Chronologists , 1013214 , Chronology
+1013214 , Chronology , 1004110 , Humanities
+21879722 , Circumvention , 691928 , Law
+5119729 , Civil_society , 1633936 , Society
+40743991 , Cleanroom_technology , 696648 , Technology
+40540908 , Clinical_medicine , 692348 , Medicine
+39776911 , Clothes_in_politics , 695027 , Politics
+737090 , Clothing , 694861 , Culture
+698269 , Clubs_and_societies , 1633936 , Society
+41337187 , Cognitive_dissonance , 956054 , Belief
+41337078 , Cognitive_inertia , 956054 , Belief
+26840325 , Coherentism , 956054 , Belief
+2934593 , Collaboration , 1633936 , Society
+696823 , Comedy , 1004110 , Humanities
+20257147 , Commemoration , 693555 , History
+702087 , Commerce , 771152 , Business
+694001 , Common_law , 691928 , Law
+709243 , Communication , 1633936 , Society
+709243 , Communication , 696648 , Technology
+3313852 , Communication_of_falsehoods , 956054 , Belief
+4945845 , Community , 1633936 , Society
+695118 , Companies , 771152 , Business
+29565412 , Comparative_politics , 695027 , Politics
+2020818 , Competition , 1633936 , Society
+2300055 , Composting , 694871 , Agriculture
+13531067 , Conceptions_of_self , 24980271 , Concepts
+24980157 , Concepts_by_field , 24980271 , Concepts
+35092769 , Conceptual_distinctions , 24980271 , Concepts
+26743152 , Conceptual_models , 24980271 , Concepts
+10853203 , Conceptual_systems , 24980271 , Concepts
+22165423 , Conceptualism , 24980271 , Concepts
+19307992 , Conflict_in_society , 1633936 , Society
+37755827 , Consensus_reality , 956054 , Belief
+737124 , Conservation , 3103170 , Environment
+1232620 , Consumer_behaviour , 771152 , Business
+3061643 , Crafts , 4892515 , Arts
+7390225 , Creative_works , 4892515 , Arts
+694870 , Crops , 694871 , Agriculture
+34955601 , Culinary_arts , 4892515 , Arts
+715355 , Cultural_anthropology , 694861 , Culture
+27479318 , Cultural_aspects_of_death , 694861 , Culture
+26562487 , Cultural_concepts , 694861 , Culture
+11705201 , Cultural_critics , 694861 , Culture
+10327838 , Cultural_education , 694861 , Culture
+27478516 , Cultural_events , 694861 , Culture
+23508439 , Cultural_exchange , 694861 , Culture
+18907287 , Cultural_generations , 694861 , Culture
+28746478 , Cultural_hegemony , 694861 , Culture
+1645950 , Cultural_history , 694861 , Culture
+9592135 , Cultural_lists , 694861 , Culture
+24816140 , Cultural_media , 694861 , Culture
+14659176 , Cultural_organizations , 694861 , Culture
+30804539 , Cultural_politics , 695027 , Politics
+6518123 , Cultural_spheres_of_influence , 694861 , Culture
+1826208 , Cultural_studies , 694861 , Culture
+10172577 , Cultural_trends , 694861 , Culture
+694861 , Culture , 1633936 , Society
+694861 , Culture , 1784082 , Humans
+32080122 , Culture-bound_syndromes , 694861 , Culture
+30819861 , Culture-related_controversies , 694861 , Culture
+18984719 , Culture_by_location , 694861 , Culture
+5885060 , Culture_portals , 694861 , Culture
+1865685 , Culture_stubs , 694861 , Culture
+5731205 , Cultures , 694861 , Culture
+15457132 , Curricula , 696763 , Education
+10079940 , Dates , 693555 , History
+7916961 , Dating_methods , 1013214 , Chronology
+952890 , Days , 1013214 , Chronology
+20537176 , Days_of_the_year , 1013214 , Chronology
+921954 , Death , 2389032 , Life
+21724300 , Debuts , 693555 , History
+4435370 , Decades , 1013214 , Chronology
+718562 , Delusional_disorder , 956054 , Belief
+30539950 , Depictions_of_people , 691008 , People
+35612550 , Determinants_of_health , 751381 , Health
+35115782 , Deviance_and_social_control , 1633936 , Society
+33395167 , Digital_humanities , 1004110 , Humanities
+932302 , Disability , 1633936 , Society
+932302 , Disability , 751381 , Health
+35053680 , Disability_in_the_arts , 4892515 , Arts
+37185019 , Disability_studies , 1004110 , Humanities
+16705267 , Diseases_and_disorders , 751381 , Health
+23147049 , Dispositional_beliefs , 956054 , Belief
+885378 , Dispute_resolution , 691928 , Law
+29226418 , Documentary_films_about_words_and_language , 8017451 , Language
+36320965 , Dogmatism , 956054 , Belief
+706779 , Domesticated_animals , 694871 , Agriculture
+2214607 , Domesticated_plants , 694871 , Agriculture
+41155375 , Doubt , 956054 , Belief
+709071 , Drama , 1004110 , Humanities
+22793354 , Early_species_of_Homo , 1784082 , Humans
+754965 , Earth , 696603 , Nature
+691262 , Ecology , 3103170 , Environment
+700114 , Economics , 1633936 , Society
+29931868 , Edicts , 691928 , Law
+696763 , Education , 1633936 , Society
+41452436 , Education-related_lists , 696763 , Education
+36928571 , Education_activism , 696763 , Education
+13825326 , Education_awards , 696763 , Education
+1445941 , Education_by_country , 696763 , Education
+4175296 , Education_by_location , 696763 , Education
+39073760 , Education_by_method , 696763 , Education
+2477717 , Education_by_subject , 696763 , Education
+7339293 , Education_economics , 696763 , Education
+4176446 , Education_finance , 696763 , Education
+4230011 , Education_in_popular_culture , 696763 , Education
+2478321 , Education_issues , 696763 , Education
+9281114 , Education_literature , 696763 , Education
+3553530 , Education_policy , 696763 , Education
+5904973 , Education_portals , 696763 , Education
+29921833 , Education_rights , 696763 , Education
+39073801 , Education_scandals_and_controversies , 696763 , Education
+1672740 , Education_stubs , 696763 , Education
+38173327 , Education_terminology , 696763 , Education
+11719938 , Education_theory , 696763 , Education
+5947851 , Educational_administration , 696763 , Education
+4273075 , Educational_assessment_and_evaluation , 696763 , Education
+4179591 , Educational_environment , 696763 , Education
+4196488 , Educational_leadership , 696763 , Education
+2488034 , Educational_materials , 696763 , Education
+1954501 , Educational_organizations , 696763 , Education
+4196539 , Educational_personnel , 696763 , Education
+4179396 , Educational_programs , 696763 , Education
+10569761 , Educational_projects , 696763 , Education
+2871217 , Educational_psychology , 696763 , Education
+4196458 , Educational_research , 696763 , Education
+2478148 , Educational_stages , 696763 , Education
+3136395 , Educational_technology , 696763 , Education
+1754928 , Elementary_mathematics , 690747 , Mathematics
+4000026 , Emergency_laws , 691928 , Law
+36590513 , Encyclopedias_of_culture_and_ethnicity , 694861 , Culture
+1847555 , Energy_storage , 696648 , Technology
+692903 , Engineering , 696648 , Technology
+693016 , Entertainment , 1004110 , Humanities
+4535976 , Entrepreneurship , 771152 , Business
+15474891 , Environment_and_society , 1633936 , Society
+15474891 , Environment_and_society , 3103170 , Environment
+26441320 , Environment_by_location , 3103170 , Environment
+36845612 , Environment_by_subject , 3103170 , Environment
+34514882 , Environment_by_year , 3103170 , Environment
+38362400 , Environment_disambiguation_pages , 3103170 , Environment
+3274358 , Environment_stubs , 3103170 , Environment
+15757902 , Environment_templates , 3103170 , Environment
+38162642 , Environmental_agencies , 3103170 , Environment
+6749727 , Environmental_awards , 3103170 , Environment
+34981064 , Environmental_certification , 3103170 , Environment
+22395178 , Environmental_conferences , 3103170 , Environment
+32872957 , Environmental_data , 3103170 , Environment
+4165191 , Environmental_design , 3103170 , Environment
+2364548 , Environmental_economics , 3103170 , Environment
+1786721 , Environmental_engineering , 3103170 , Environment
+17265684 , Environmental_health , 3103170 , Environment
+14750746 , Environmental_history , 3103170 , Environment
+38425257 , Environmental_humanities , 1004110 , Humanities
+38425257 , Environmental_humanities , 3103170 , Environment
+15877642 , Environmental_issues , 3103170 , Environment
+34796186 , Environmental_management , 3103170 , Environment
+22870229 , Environmental_media , 3103170 , Environment
+32607076 , Environmental_policy , 3103170 , Environment
+24946646 , Environmental_protection , 3103170 , Environment
+38350034 , Environmental_research , 3103170 , Environment
+1645754 , Environmental_science , 3103170 , Environment
+10427407 , Environmental_standards , 3103170 , Environment
+25345834 , Environmental_statistics , 3103170 , Environment
+38349629 , Environmental_studies , 693800 , Geography
+38349629 , Environmental_studies , 3103170 , Environment
+8184738 , Environmental_technology , 3103170 , Environment
+17266395 , Environmental_terminology , 3103170 , Environment
+34750450 , Environmental_timelines , 3103170 , Environment
+737047 , Environmentalism , 3103170 , Environment
+2690886 , Environments , 3103170 , Environment
+3228046 , Equipment , 696648 , Technology
+705897 , Ethnic_groups , 1784082 , Humans
+8066813 , Ethnic_studies , 1004110 , Humanities
+787548 , Ethnicity , 694861 , Culture
+31580983 , Etiology , 692348 , Medicine
+40455234 , Euthenics , 1633936 , Society
+2766046 , Events , 694861 , Culture
+2766046 , Events , 693555 , History
+1374489 , Evolution , 696603 , Nature
+968416 , Exploration , 693800 , Geography
+11154230 , Extraterrestrial_life , 2389032 , Life
+35085280 , Facilities_and_organizations_of_science , 691182 , Science
+706788 , Family , 1633936 , Society
+11135742 , Farming_tools , 694871 , Agriculture
+8176556 , Feminism_and_society , 1633936 , Society
+18364955 , Fertilizers , 694871 , Agriculture
+692981 , Fiction , 24980271 , Concepts
+691623 , Fictional_characters , 691008 , People
+8141824 , Fictional_human_races , 1784082 , Humans
+17567748 , Fictional_life_forms , 2389032 , Life
+1034234 , Fictional_objects , 24980271 , Concepts
+20076879 , Fictional_science , 691182 , Science
+25552267 , Fictional_society , 1633936 , Society
+1891719 , Fictional_technology , 696648 , Technology
+13078054 , Fields_of_history , 693555 , History
+33734763 , Fields_of_mathematics , 690747 , Mathematics
+28115761 , Films_about_language_and_translation , 8017451 , Language
+24594583 , Films_about_technology , 696648 , Technology
+718764 , Finance , 771152 , Business
+694860 , Food_and_drink , 694861 , Culture
+27501955 , Foundationalism , 956054 , Belief
+8954702 , Free_educational_software , 696763 , Education
+8132363 , Fringe_science , 691182 , Science
+39301110 , Funerary_art , 4892515 , Arts
+24124092 , Gastronomy , 694861 , Culture
+28085964 , Gender_and_education , 696763 , Education
+10947954 , Gender_in_language , 8017451 , Language
+696920 , Gender_studies , 1004110 , Humanities
+1265016 , Geochronology , 1013214 , Chronology
+724833 , Geocodes , 693800 , Geography
+996465 , Geographers , 693800 , Geography
+1822668 , Geographic_images , 693800 , Geography
+13704997 , Geographic_literature , 693800 , Geography
+2251204 , Geographical_technology , 693800 , Geography
+4676118 , Geography-related_lists , 693800 , Geography
+15965971 , Geography_and_place_templates , 693800 , Geography
+8700702 , Geography_awards_and_competitions , 693800 , Geography
+5782300 , Geography_by_place , 693800 , Geography
+9503617 , Geography_education , 693800 , Geography
+15160074 , Geography_organizations , 693800 , Geography
+5774648 , Geography_portals , 693800 , Geography
+931823 , Geography_stubs , 693800 , Geography
+9962372 , Geography_terminology , 693800 , Geography
+35937081 , Global_natural_environment , 3103170 , Environment
+1030891 , Globalization , 771152 , Business
+38301528 , Governance , 695027 , Politics
+697609 , Government , 695027 , Politics
+13361665 , Government_and_politics_images , 695027 , Politics
+9575689 , Greenwashing , 3103170 , Environment
+21024994 , Harvest , 694871 , Agriculture
+751381 , Health , 1633936 , Society
+13000668 , Health-related_lists , 751381 , Health
+8698297 , Health_activists , 751381 , Health
+12631737 , Health_by_city , 751381 , Health
+17643840 , Health_by_continent , 751381 , Health
+2693630 , Health_by_country , 751381 , Health
+16951202 , Health_by_individual , 751381 , Health
+35880954 , Health_care , 751381 , Health
+707163 , Health_deities , 751381 , Health
+39030351 , Health_disparities , 751381 , Health
+4852121 , Health_economics , 751381 , Health
+6123888 , Health_education , 751381 , Health
+18400066 , Health_fields , 751381 , Health
+3031321 , Health_informatics , 751381 , Health
+23120838 , Health_insurance , 692348 , Medicine
+1585045 , Health_law , 751381 , Health
+18948438 , Health_movements , 751381 , Health
+25381444 , Health_officials , 751381 , Health
+21421283 , Health_policy , 751381 , Health
+6797656 , Health_research , 751381 , Health
+964864 , Health_sciences , 751381 , Health
+4231514 , Health_stubs , 751381 , Health
+36051985 , Hebrew_language_chronology_works , 1013214 , Chronology
+35554368 , Hemispheres_of_the_Earth , 693800 , Geography
+2644475 , High-technology_business_districts , 696648 , Technology
+702708 , Historians , 693555 , History
+925351 , Historical_eras , 693555 , History
+925351 , Historical_eras , 1013214 , Chronology
+693555 , History , 1013214 , Chronology
+693555 , History , 1004110 , Humanities
+693555 , History , 1633936 , Society
+4303236 , History-related_lists , 693555 , History
+11331697 , History_awards , 693555 , History
+2032160 , History_by_ethnic_group , 693555 , History
+18985014 , History_by_location , 693555 , History
+895831 , History_by_period , 693555 , History
+895801 , History_by_topic , 693555 , History
+11273485 , History_education , 693555 , History
+1821011 , History_images , 693555 , History
+16984427 , History_of_agriculture , 694871 , Agriculture
+3248624 , History_of_education , 696763 , Education
+4612800 , History_of_geography , 693800 , Geography
+707333 , History_of_science , 691182 , Science
+1453027 , History_of_sports , 693708 , Sports
+707335 , History_of_technology , 696648 , Technology
+2908575 , History_organizations , 693555 , History
+40190384 , History_painters , 693555 , History
+34088419 , History_portal , 693555 , History
+34088419 , History_portal , 1013214 , Chronology
+2281247 , History_stubs , 693555 , History
+803231 , Home , 1633936 , Society
+21116311 , Home_economics , 696763 , Education
+21249925 , Horticulture_and_gardening , 694871 , Agriculture
+923111 , Human_appearance , 1784082 , Humans
+2524202 , Human_behavior , 1784082 , Humans
+34235418 , Human_biology , 1784082 , Humans
+17781477 , Human_body , 1784082 , Humans
+981229 , Human_development , 1784082 , Humans
+842146 , Human_evolution , 1784082 , Humans
+1111700 , Human_geography , 1784082 , Humans
+4404631 , Human_habitats , 1784082 , Humans
+23681731 , Human_names , 691008 , People
+18551617 , Human_power , 1784082 , Humans
+10099038 , Human_reproduction , 1784082 , Humans
+692454 , Human_rights , 1784082 , Humans
+1004110 , Humanities , 694861 , Culture
+14219042 , Humanities_awards , 1004110 , Humanities
+27624683 , Humanities_education , 1004110 , Humanities
+28893553 , Humanities_institutes , 1004110 , Humanities
+10045785 , Humanities_journals , 1004110 , Humanities
+1005970 , Humanities_occupations , 1004110 , Humanities
+37934903 , Humanoids , 1784082 , Humans
+27290300 , Human–animal_interaction , 694861 , Culture
+31454449 , Human–machine_interaction , 1784082 , Humans
+17910938 , Humor_research , 1004110 , Humanities
+1056532 , Hygiene , 751381 , Health
+33118759 , Hypothetical_life_forms , 2389032 , Life
+25655723 , Hypothetical_technology , 696648 , Technology
+41429824 , Ignorance , 956054 , Belief
+1471921 , Images_by_scientific_discipline , 691182 , Science
+2177360 , Images_from_sports , 693708 , Sports
+1440141 , Images_of_people , 691008 , People
+14393408 , Impeachment , 691928 , Law
+11874300 , Impossible_objects , 24980271 , Concepts
+34237989 , Indexes_of_biographical_topics , 691008 , People
+34909056 , Indexes_of_environmental_topics , 3103170 , Environment
+41133291 , Indigenous_health , 751381 , Health
+14593990 , Industrial_agriculture , 694871 , Agriculture
+871525 , Industry , 696648 , Technology
+871525 , Industry , 771152 , Business
+1009209 , Information , 24980271 , Concepts
+700911 , Information_technology , 696648 , Technology
+37574925 , Innovation_economics , 771152 , Business
+35722025 , Intellectual_competitions , 696763 , Education
+35722025 , Intellectual_competitions , 693708 , Sports
+3236392 , International_business , 771152 , Business
+39427145 , Interpretation , 696763 , Education
+2304602 , Irrigation , 694871 , Agriculture
+39927321 , Islam_and_sport , 693708 , Sports
+13275069 , Judgment , 956054 , Belief
+7092216 , Jurisprudence , 691928 , Law
+724603 , Jurists , 691928 , Law
+700914 , Knowledge , 956054 , Belief
+700914 , Knowledge , 24980271 , Concepts
+32416275 , LGBT_and_education , 696763 , Education
+755020 , Labor , 1633936 , Society
+38263090 , Land_systems , 693800 , Geography
+7904093 , Landscape , 693800 , Geography
+8017451 , Language , 1004110 , Humanities
+15072896 , Language-related_awards , 8017451 , Language
+2286515 , Language_acquisition , 8017451 , Language
+7709598 , Language_and_mysticism , 8017451 , Language
+32723197 , Language_competitions , 8017451 , Language
+1289327 , Language_games , 8017451 , Language
+31212249 , Language_interpretation , 8017451 , Language
+26148472 , Language_mechanics , 8017451 , Language
+13993074 , Language_policy , 8017451 , Language
+20796274 , Language_software , 8017451 , Language
+843378 , Language_stubs , 8017451 , Language
+694748 , Languages , 694861 , Culture
+694748 , Languages , 8017451 , Language
+37694757 , Law_by_city , 691928 , Law
+939795 , Law_by_country , 691928 , Law
+8985254 , Law_by_forum , 691928 , Law
+6583567 , Law_by_issue , 691928 , Law
+6584073 , Law_by_region , 691928 , Law
+36392182 , Law_by_time , 691928 , Law
+718211 , Law_enforcement , 691928 , Law
+11422179 , Law_libraries , 691928 , Law
+1656699 , Law_lists , 691928 , Law
+23530196 , Law_museums , 691928 , Law
+5905127 , Law_portals , 691928 , Law
+1065465 , Law_stubs , 691928 , Law
+4550651 , Law_templates , 691928 , Law
+694063 , Lawyers , 691928 , Law
+10618262 , Lean_concepts , 771152 , Business
+1055691 , Learning , 696763 , Education
+34163707 , Legacies , 693555 , History
+6584434 , Legal_action , 691928 , Law
+13822772 , Legal_awards , 691928 , Law
+3916327 , Legal_categories_of_people , 691928 , Law
+6584363 , Legal_communication , 691928 , Law
+28359282 , Legal_concepts , 691928 , Law
+16324388 , Legal_costs , 691928 , Law
+7605468 , Legal_disputes , 691928 , Law
+1240968 , Legal_education , 691928 , Law
+1125732 , Legal_entities , 691928 , Law
+692704 , Legal_ethics , 691928 , Law
+707341 , Legal_history , 691928 , Law
+38612527 , Legal_issues , 691928 , Law
+6583801 , Legal_organizations , 691928 , Law
+23242540 , Legal_professions , 691928 , Law
+31966613 , Legal_reform , 691928 , Law
+1556636 , Legal_research , 691928 , Law
+1123736 , Legal_terms , 691928 , Law
+37569823 , Legal_works , 691928 , Law
+2389032 , Life , 696603 , Nature
+34859018 , Life_in_space , 2389032 , Life
+28085670 , Life_skills , 751381 , Health
+693798 , Linguistics , 1004110 , Humanities
+693798 , Linguistics , 8017451 , Language
+22357105 , Lists_of_environmental_topics , 3103170 , Environment
+694611 , Lists_of_people , 691008 , People
+692008 , Literature , 1004110 , Humanities
+692008 , Literature , 4892515 , Arts
+23267028 , Luxury , 694861 , Culture
+787284 , Management , 771152 , Business
+784409 , Marketing , 771152 , Business
+27248985 , Mathematical_concepts , 690747 , Mathematics
+2339061 , Mathematical_examples , 690747 , Mathematics
+1001537 , Mathematical_notation , 690747 , Mathematics
+34559856 , Mathematical_problem_solving , 690747 , Mathematics
+1098276 , Mathematical_terminology , 690747 , Mathematics
+838036 , Mathematical_tools , 690747 , Mathematics
+693661 , Mathematicians , 690747 , Mathematics
+4684939 , Mathematics-related_lists , 690747 , Mathematics
+1874224 , Mathematics_and_culture , 690747 , Mathematics
+10420868 , Mathematics_literature , 690747 , Mathematics
+34090929 , Mathematics_portal , 690747 , Mathematics
+1676945 , Mathematics_stubs , 690747 , Mathematics
+14567652 , Mating_systems , 1633936 , Society
+1926287 , Matter , 696603 , Nature
+24459928 , Meat_industry , 694871 , Agriculture
+1733859 , Media_studies , 1004110 , Humanities
+14658985 , Medical_and_health_organizations , 751381 , Health
+14658985 , Medical_and_health_organizations , 692348 , Medicine
+1427229 , Medical_education , 692348 , Medicine
+799934 , Medical_equipment , 692348 , Medicine
+2233830 , Medical_lists , 692348 , Medicine
+1169815 , Medical_research , 692348 , Medicine
+1449968 , Medical_specialties , 692348 , Medicine
+18960497 , Medical_technology , 692348 , Medicine
+18960497 , Medical_technology , 696648 , Technology
+38173171 , Medical_terminology , 692348 , Medicine
+16705284 , Medicine_in_society , 692348 , Medicine
+16705284 , Medicine_in_society , 1633936 , Society
+29216632 , Medicine_portal , 692348 , Medicine
+1258736 , Medicine_stubs , 692348 , Medicine
+16777187 , Medicine_templates , 692348 , Medicine
+14368158 , Memes , 24980271 , Concepts
+24209717 , Men_and_the_arts , 4892515 , Arts
+2120643 , Mergers_and_acquisitions , 771152 , Business
+1250918 , Metaphors , 24980271 , Concepts
+716572 , Military , 1633936 , Society
+886561 , Millennia , 1013214 , Chronology
+15878432 , Mobile_technology , 696648 , Technology
+948833 , Months , 1013214 , Chronology
+24585646 , Mountaineering_and_health , 751381 , Health
+844329 , Movements , 1633936 , Society
+2999304 , Museology , 1004110 , Humanities
+22811075 , Museum_education , 696763 , Education
+22481632 , Music_geography , 693800 , Geography
+2933492 , Nationality , 1633936 , Society
+20084530 , Natural_environment_based_therapies , 3103170 , Environment
+18835615 , Natural_events , 696603 , Nature
+710663 , Natural_hazards , 696603 , Nature
+2054828 , Natural_history , 691182 , Science
+2054828 , Natural_history , 696603 , Nature
+30628568 , Natural_language_and_computing , 8017451 , Language
+2959852 , Natural_materials , 696603 , Nature
+14625904 , Natural_monuments , 696603 , Nature
+1103405 , Natural_resources , 3103170 , Environment
+697022 , Natural_sciences , 696603 , Nature
+34865045 , Naturalism_(philosophy) , 696603 , Nature
+4935817 , Nature-related_lists , 696603 , Nature
+32999859 , Nature_and_religion , 696603 , Nature
+3041418 , Nature_writers , 696603 , Nature
+21259329 , Nostalgia , 693555 , History
+1600172 , Oaths , 691928 , Law
+33209447 , Obsolete_technologies , 696648 , Technology
+1388304 , Office_work , 771152 , Business
+1008581 , Operations_research , 771152 , Business
+2955178 , Oral_communication , 8017451 , Language
+8899078 , Organisms , 2389032 , Life
+708101 , Organizations , 1633936 , Society
+1948437 , Packaging , 696648 , Technology
+716918 , Paleontology , 1013214 , Chronology
+691008 , People , 1633936 , Society
+691008 , People , 1784082 , Humans
+37533062 , People_associated_with_technology , 696648 , Technology
+38390455 , People_associated_with_the_arts , 4892515 , Arts
+39579340 , People_categories_by_parameter , 691008 , People
+32201407 , People_in_agriculture , 694871 , Agriculture
+6235455 , People_in_health_professions , 751381 , Health
+857591 , People_stubs , 691008 , People
+991222 , Performing_arts , 4892515 , Arts
+1194342 , Perfumery , 4892515 , Arts
+36182107 , Personhood , 1784082 , Humans
+28353267 , Persuasion , 956054 , Belief
+17321675 , Phenomena , 696603 , Nature
+6185426 , Philology , 8017451 , Language
+691810 , Philosophy , 1004110 , Humanities
+13485666 , Philosophy_and_culture , 694861 , Culture
+27974196 , Philosophy_and_society , 1633936 , Society
+27421250 , Philosophy_of_education , 696763 , Education
+12319380 , Philosophy_of_history , 693555 , History
+744038 , Philosophy_of_language , 8017451 , Language
+1096373 , Philosophy_of_law , 691928 , Law
+1152426 , Philosophy_of_mathematics , 690747 , Mathematics
+772270 , Philosophy_of_science , 691182 , Science
+12885527 , Philosophy_of_technology , 696648 , Technology
+34955640 , Physical_exercise , 693708 , Sports
+3450392 , Physical_phenomena , 696603 , Nature
+16703584 , Places , 693800 , Geography
+26784036 , Playing_field_surfaces , 693708 , Sports
+8592882 , Policy , 691928 , Law
+6232412 , Political_activism , 695027 , Politics
+6222478 , Political_communication , 695027 , Politics
+10973493 , Political_controversies , 695027 , Politics
+1896016 , Political_corruption , 695027 , Politics
+21722732 , Political_culture , 695027 , Politics
+21722732 , Political_culture , 694861 , Culture
+14541050 , Political_events , 695027 , Politics
+4129676 , Political_history , 695027 , Politics
+2727945 , Political_organizations , 695027 , Politics
+2325193 , Political_people , 695027 , Politics
+1013657 , Political_philosophy , 695027 , Politics
+8938523 , Political_schisms , 695027 , Politics
+693803 , Political_science , 695027 , Politics
+724233 , Political_theories , 695027 , Politics
+23195730 , Political_timelines , 695027 , Politics
+38401703 , Political_violence , 695027 , Politics
+37570027 , Political_works , 695027 , Politics
+695027 , Politics , 1633936 , Society
+17329958 , Politics-related_lists , 695027 , Politics
+7982551 , Politics_awards , 695027 , Politics
+701859 , Politics_by_country , 695027 , Politics
+2325248 , Politics_by_issue , 695027 , Politics
+40105071 , Politics_by_period , 695027 , Politics
+2325168 , Politics_by_region , 695027 , Politics
+17583447 , Politics_of_country_subdivisions , 695027 , Politics
+36948305 , Politics_portal , 695027 , Politics
+5887742 , Politics_portals , 695027 , Politics
+1079671 , Politics_stubs , 695027 , Politics
+37077698 , Politics_templates , 695027 , Politics
+910633 , Positions_of_authority , 695027 , Politics
+2100400 , Postindustrial_society , 1633936 , Society
+27111192 , Practice_of_law , 691928 , Law
+40554931 , Practice_of_medicine , 692348 , Medicine
+16760492 , Pre-Columbian_cultural_areas , 693800 , Geography
+3350476 , Prehistoric_life , 2389032 , Life
+1724212 , Prehistory , 693555 , History
+1227023 , Pricing , 771152 , Business
+5922972 , Principles , 24980271 , Concepts
+7540641 , Procurement , 771152 , Business
+11407003 , Projects , 696648 , Technology
+1232608 , Promotion_and_marketing_communications , 771152 , Business
+39547643 , Protoscience , 691182 , Science
+9997124 , Pseudo-scholarship , 956054 , Belief
+828361 , Pseudoscience , 691182 , Science
+11277715 , Public_opinion , 956054 , Belief
+907401 , Qualifications , 696763 , Education
+40249123 , Quality_of_life , 3103170 , Environment
+31580725 , Quantity , 24980271 , Concepts
+36099394 , Race_(human_classification) , 1784082 , Humans
+37989948 , Race_and_education , 696763 , Education
+31887701 , Race_and_society , 1633936 , Society
+40833863 , Racism_in_sport , 693708 , Sports
+34213741 , Real-time_technology , 696648 , Technology
+7104071 , Redirects_from_alternative_languages , 8017451 , Language
+11090202 , Redirects_from_people , 691008 , People
+692694 , Religion , 694861 , Culture
+9372156 , Religion_and_education , 696763 , Education
+1883977 , Religion_and_society , 1633936 , Society
+20813658 , Religious_belief_and_doctrine , 956054 , Belief
+4787400 , Reproduction , 2389032 , Life
+795966 , Rhetoric , 1004110 , Humanities
+908424 , Rights , 691928 , Law
+11223487 , Ritual , 694861 , Culture
+28198337 , Rural_society , 694871 , Agriculture
+28198337 , Rural_society , 1633936 , Society
+4536131 , Sales , 771152 , Business
+34394149 , Scares , 1633936 , Society
+31768366 , School_and_classroom_behaviour , 696763 , Education
+4677661 , Science-related_lists , 691182 , Science
+8584316 , Science_and_culture , 694861 , Culture
+11886695 , Science_and_engineering_awards , 696648 , Technology
+11886695 , Science_and_engineering_awards , 691182 , Science
+3463166 , Science_and_law , 691928 , Law
+29320082 , Science_and_technology_by_location , 691182 , Science
+29320082 , Science_and_technology_by_location , 696648 , Technology
+3350883 , Science_and_technology_studies , 696648 , Technology
+41023719 , Science_commemorations , 691182 , Science
+3598507 , Science_education , 691182 , Science
+2157472 , Science_in_society , 691182 , Science
+2157472 , Science_in_society , 1633936 , Society
+1003632 , Science_occupations , 691182 , Science
+2576891 , Science_parks , 696648 , Technology
+5884865 , Science_portals , 691182 , Science
+933437 , Science_stubs , 691182 , Science
+32847388 , Scientific_buildings , 691182 , Science
+700421 , Scientific_classification , 691182 , Science
+3981960 , Scientific_disciplines , 691182 , Science
+40737379 , Scientific_exploration , 691182 , Science
+19307021 , Scientific_folklore , 691182 , Science
+19571326 , Scientific_instruments , 691182 , Science
+37547424 , Scientific_laws , 691182 , Science
+700292 , Scientific_method , 691182 , Science
+39792749 , Scientific_phenomena , 691182 , Science
+20392066 , Scientific_speculation , 691182 , Science
+3674304 , Scientific_terminology , 691182 , Science
+21991760 , Scientific_theories , 691182 , Science
+37609380 , Scientific_works , 691182 , Science
+694953 , Scientists , 691182 , Science
+1055905 , Self , 1784082 , Humans
+15778405 , Self-reference , 8017451 , Language
+19948937 , Set_indices_on_sports , 693708 , Sports
+1617394 , Sexuality_and_society , 1633936 , Society
+23047269 , Slaughter_methods , 694871 , Agriculture
+13443890 , Small_business , 771152 , Business
+3659012 , Social_change , 1633936 , Society
+39015576 , Social_commentary , 1633936 , Society
+14078337 , Social_events , 1633936 , Society
+1093141 , Social_groups , 1633936 , Society
+4831571 , Social_history , 1633936 , Society
+2611474 , Social_institutions , 1633936 , Society
+3659008 , Social_issues , 1633936 , Society
+12795625 , Social_media , 1633936 , Society
+771308 , Social_philosophy , 1633936 , Society
+35018983 , Social_problems , 1633936 , Society
+17985617 , Social_responsibility , 1633936 , Society
+695042 , Social_sciences , 1633936 , Society
+10938808 , Social_systems , 1633936 , Society
+5783724 , Social_work , 1633936 , Society
+1633936 , Society , 1784082 , Humans
+4677671 , Society-related_lists , 1633936 , Society
+40254056 , Society_by_location , 1633936 , Society
+10525413 , Society_in_fiction , 1633936 , Society
+33847891 , Society_portal , 1633936 , Society
+5904860 , Society_portals , 1633936 , Society
+1570101 , Socioeconomics , 1633936 , Society
+699593 , Sociology , 1633936 , Society
+21082158 , Sociology_of_culture , 694861 , Culture
+17242161 , Sociology_of_law , 691928 , Law
+14507875 , Soil , 694871 , Agriculture
+36468932 , Sources_of_law , 691928 , Law
+33973460 , Spaceflight_concepts , 24980271 , Concepts
+14285085 , Speech_and_language_pathology , 8017451 , Language
+735168 , Spirituality , 956054 , Belief
+29671305 , Spirituality_and_the_arts , 4892515 , Arts
+4704135 , Sport_and_politics , 693708 , Sports
+3304038 , Sport_by_city , 693708 , Sports
+8085294 , Sport_by_continent , 693708 , Sports
+20102160 , Sport_by_country , 693708 , Sports
+2693936 , Sports-related_lists , 693708 , Sports
+33484752 , Sports_administration , 693708 , Sports
+25540756 , Sports_and_games_portal , 693708 , Sports
+7772093 , Sports_business , 771152 , Business
+7772093 , Sports_business , 693708 , Sports
+41460038 , Sports_by_continent , 693708 , Sports
+20132205 , Sports_by_country , 693708 , Sports
+24183630 , Sports_by_country_of_origin , 693708 , Sports
+23596516 , Sports_by_type , 693708 , Sports
+928145 , Sports_by_year , 693708 , Sports
+14580502 , Sports_controversies , 693708 , Sports
+1489599 , Sports_culture , 694861 , Culture
+1489599 , Sports_culture , 693708 , Sports
+8285908 , Sports_events , 693708 , Sports
+13333671 , Sports_instruction , 693708 , Sports
+37773067 , Sports_journalism , 693708 , Sports
+943436 , Sports_museums , 693708 , Sports
+25536293 , Sports_occupations_and_roles , 693708 , Sports
+1489601 , Sports_organisations , 693708 , Sports
+38285423 , Sports_portal , 693708 , Sports
+3501863 , Sports_records_and_statistics , 693708 , Sports
+14543951 , Sports_rules_and_regulations , 693708 , Sports
+5768462 , Sports_science , 693708 , Sports
+4299106 , Sports_seasons , 693708 , Sports
+38063613 , Sports_strategy , 693708 , Sports
+937322 , Sports_stubs , 693708 , Sports
+1357047 , Sports_technology , 693708 , Sports
+4367933 , Sports_templates , 693708 , Sports
+1489690 , Sports_terminology , 693708 , Sports
+708305 , Sports_trophies_and_awards , 693708 , Sports
+3826004 , Sports_venues , 693708 , Sports
+37275026 , Spouses , 691008 , People
+13887504 , Statements , 24980271 , Concepts
+13887504 , Statements , 8017451 , Language
+36281381 , Statistics_of_education , 696763 , Education
+1585128 , Statutory_law , 691928 , Law
+5183917 , Structure , 24980271 , Concepts
+30930499 , Student_farms , 694871 , Agriculture
+4174841 , Students , 696763 , Education
+3144983 , Study_of_religion , 1004110 , Humanities
+737226 , Superstitions , 956054 , Belief
+1071627 , Surveying , 693800 , Geography
+691777 , Sustainability , 3103170 , Environment
+738565 , Symbols , 24980271 , Concepts
+10939195 , Systems , 696603 , Nature
+10939195 , Systems , 24980271 , Concepts
+1241037 , Taxation , 691928 , Law
+2478638 , Teaching , 696763 , Education
+1222842 , Technical_communication , 696648 , Technology
+36966409 , Technical_specifications , 696648 , Technology
+9360169 , Technical_universities_and_colleges , 696648 , Technology
+25499148 , Technicians , 696648 , Technology
+6627672 , Technological_change , 696648 , Technology
+21015099 , Technological_comparison , 696648 , Technology
+40050394 , Technological_pollution , 696648 , Technology
+4677674 , Technology-related_lists , 696648 , Technology
+12777176 , Technology_and_inventions_by_region , 696648 , Technology
+17200193 , Technology_by_type , 696648 , Technology
+40650560 , Technology_by_year , 696648 , Technology
+3608033 , Technology_companies , 696648 , Technology
+17038002 , Technology_development , 696648 , Technology
+16585122 , Technology_evangelism , 696648 , Technology
+41202060 , Technology_events , 696648 , Technology
+1286258 , Technology_folklore , 696648 , Technology
+1481320 , Technology_images , 696648 , Technology
+2157920 , Technology_in_society , 696648 , Technology
+2157920 , Technology_in_society , 1633936 , Society
+5882486 , Technology_literature , 696648 , Technology
+2577072 , Technology_neologisms , 696648 , Technology
+9112556 , Technology_podcasts , 696648 , Technology
+5885188 , Technology_portals , 696648 , Technology
+4116088 , Technology_strategy , 696648 , Technology
+1389404 , Technology_stubs , 696648 , Technology
+10958482 , Technology_systems , 696648 , Technology
+9564514 , Technology_trade_associations , 696648 , Technology
+12766286 , Technology_transfer , 696648 , Technology
+3256544 , Technology_websites , 696648 , Technology
+1016013 , Terminology , 8017451 , Language
+36859285 , The_arts_and_politics , 4892515 , Arts
+1963117 , Theories , 24980271 , Concepts
+40316372 , Theory_of_medicine , 692348 , Medicine
+694290 , Timelines , 1013214 , Chronology
+39069125 , Topics_in_the_arts , 4892515 , Arts
+698284 , Tourism , 694861 , Culture
+18526113 , Trade , 771152 , Business
+2957649 , Traditional_medicine , 692348 , Medicine
+696248 , Traditions , 694861 , Culture
+696248 , Traditions , 956054 , Belief
+27509873 , Tragedy , 1004110 , Humanities
+4189120 , Training , 696763 , Education
+35533421 , Translation_and_interpreting_schools , 696763 , Education
+18623462 , Transport_culture , 694861 , Culture
+976276 , Tree_of_life , 2389032 , Life
+9885425 , Types_of_scientific_fallacy , 956054 , Belief
+39653242 , University_programs , 696763 , Education
+6440102 , Urban_agriculture , 694871 , Agriculture
+36723401 , Urban_society , 1633936 , Society
+705232 , Urban_studies_and_planning , 3103170 , Environment
+2634715 , Vacuum , 696603 , Nature
+24727902 , Vernacular_geography , 693800 , Geography
+977183 , Veterinary_medicine , 692348 , Medicine
+1081533 , Visual_arts , 4892515 , Arts
+1486284 , Vocabulary , 8017451 , Language
+2251696 , Vocational_education , 696763 , Education
+15854681 , Voting , 695027 , Politics
+25505074 , Water_and_society , 1633936 , Society
+24921117 , Weight_loss , 751381 , Health
+27537005 , Wikipedia_books_on_arts , 4892515 , Arts
+27536896 , Wikipedia_books_on_culture , 694861 , Culture
+27548898 , Wikipedia_books_on_education , 696763 , Education
+27539107 , Wikipedia_books_on_geography , 693800 , Geography
+27562025 , Wikipedia_books_on_language , 8017451 , Language
+27537186 , Wikipedia_books_on_nature , 696603 , Nature
+27544736 , Wikipedia_books_on_people , 691008 , People
+27537633 , Wikipedia_books_on_society , 1633936 , Society
+27537434 , Wikipedia_books_on_technology , 696648 , Technology
+35321010 , Wikipedia_categories_named_after_people , 691008 , People
+18891503 , Women_and_the_arts , 4892515 , Arts
+35074971 , Women_in_society , 1633936 , Society
+1273447 , Words , 24980271 , Concepts
+39412843 , Words_and_phrases_by_culture , 694861 , Culture
+37579674 , Works_about_agriculture , 694871 , Agriculture
+37609878 , Works_about_business , 771152 , Business
+37676013 , Works_about_health , 751381 , Health
+37595625 , Works_about_law , 691928 , Law
+32792203 , Works_about_nature , 696603 , Nature
+37569934 , Works_about_politics , 695027 , Politics
+37609639 , Works_about_science , 691182 , Science
+37604629 , Works_about_sports , 693708 , Sports
+32746897 , Works_about_the_arts , 4892515 , Arts
+41370324 , World_population , 3103170 , Environment
+1166293 , Writing , 8017451 , Language
+884430 , Years , 1013214 , Chronology
