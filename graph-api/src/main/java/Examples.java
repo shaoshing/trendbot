@@ -24,6 +24,10 @@ public class Examples {
         pages = graph.getIncomingPages("Curling,_Newfoundland_and_Labrador");
         printPages(pages);
 
+        System.out.println("\n================ Testing graph.getCategoryPages level 1");
+        pages = graph.getCategoryPages("27_Club", 1);
+        printPagesAndCategories(pages);
+
         System.out.println("\n================ Testing graph.getCategoryPages level 2");
         pages = graph.getCategoryPages("27_Club", 2);
         printPagesAndCategories(pages);

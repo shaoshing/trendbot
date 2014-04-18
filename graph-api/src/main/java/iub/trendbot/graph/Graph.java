@@ -45,10 +45,21 @@ public class Graph {
     }
 
     public ArrayList<Page> getCategoryPages(String pageTitle, int level){
-        String cypher = String.format(
-                "MATCH (p:Page {title: \"%s\"}) -[:L1_BELONGS_TO]-> (c:Category {level: %d}) <-[:BELONGS_TO]- (pp:Page) " +
-                        "RETURN pp.id, pp.title, c.id, c.title, c.level",
-                Client.escape(pageTitle), level);
+        String cypher = "";
+
+        if(level == 1){
+            cypher = String.format(
+                    "MATCH (p:Page {title: \"%s\"}) -[:L1_BELONGS_TO]-> (cc:Category) <-- (pp:Page), " +
+                            "cc -[:BELONGS_TO_CATEGORY]-> (c:Category {level: 1}) " +
+                            "RETURN pp.id, pp.title, c.id, c.title, c.level",
+                    Client.escape(pageTitle));
+        }else{
+            cypher = String.format(
+                    "MATCH (p:Page {title: \"%s\"}) -[:L1_BELONGS_TO]-> (c:Category {level: %d}) <-[:BELONGS_TO]- (pp:Page) " +
+                            "RETURN pp.id, pp.title, c.id, c.title, c.level",
+                    Client.escape(pageTitle), level);
+        }
+
 
         JSONObject result = client().query(cypher);
         ArrayList<Page> pages = new ArrayList<Page>();
