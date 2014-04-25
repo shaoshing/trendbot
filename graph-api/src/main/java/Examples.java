@@ -33,7 +33,7 @@ public class Examples {
         printPagesAndCategories(pages);
 
         System.out.println("\n================ Testing graph.getCategoryPages level 3");
-        pages = graph.getCategoryPages("Prince", 3);
+        pages = graph.getCategoryPages("Bill_Russell_NBA_Finals_Most_Valuable_Player_Award", 3);
         printPagesAndCategories(pages);
     }
 

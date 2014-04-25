@@ -56,7 +56,7 @@ public class Graph {
         }else{
             cypher = String.format(
                     "MATCH (p:Page {title: \"%s\"}) -[:L1_BELONGS_TO]-> (c:Category {level: %d}) <-[:BELONGS_TO]- (pp:Page) " +
-                            "RETURN pp.id, pp.title, c.id, c.title, c.level",
+                            "RETURN DISTINCT pp.id, pp.title, c.id, c.title, c.level",
                     Client.escape(pageTitle), level);
         }
 
