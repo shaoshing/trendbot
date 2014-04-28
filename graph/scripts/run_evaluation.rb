@@ -50,7 +50,12 @@ PAGE_VIEWS_SQL = %(SELECT pagetitle, pageviewcount, DATE_FORMAT(datetime, "%s") 
 # {
 #   "title": {20120201: 200, ...}
 # }
+CACHE = {}
 def get_page_views(pages, date)
+  cache_key = (pages.hash+date.hash).hash
+
+  return CACHE[cache_key] if CACHE[cache_key]
+
   # initialize default page views
   default_views = {}
   ((-DAYS_BACK)..DAYS_BACK).each do |d|
@@ -74,6 +79,7 @@ def get_page_views(pages, date)
     views[pv['pagetitle']][date] += pv['pageviewcount']
   end
 
+  CACHE[cache_key] = views
   views
 end
 
@@ -89,20 +95,39 @@ def evaluate_1(pages, date)
     popular_page_count += 1 if view_of_the_date > average + PAGE_VIEW_DIFF
   end
 
-  (popular_page_count / pages.length).round(3)
+  (popular_page_count / pages.length.to_f).round(3)
 end
 
-def evaluate_2(pages)
-  0
+TOTAL_PAGE_VIEWS = {}
+# returns total pages view and the % of page views contributed
+def evaluate_2(pages, date)
+  if TOTAL_PAGE_VIEWS.length == 0
+    MYSQL.query('SELECT * FROM total_page_views').each do |p|
+      TOTAL_PAGE_VIEWS[p['date'].to_i] = p['total_page_views']
+    end
+  end
+
+  views = get_page_views(pages, date)
+  dateValue = date.strftime('%Y%m%d').to_i
+
+  total_page_views = TOTAL_PAGE_VIEWS[dateValue]
+  return 0, 0 unless total_page_views
+
+  contributed_page_views = 0
+  views.each do |title, v|
+    contributed_page_views += v[dateValue]
+  end
+
+  return total_page_views, (contributed_page_views / total_page_views.to_f).round(3)
 end
 
 MAXIMUM_PAGES = 400
 ALL_KEYWORDS_SQL = %(SELECT DISTINCT keyword, date FROM pages WHERE date >= 20140204 AND date <= 20140225 ORDER BY date)
 keywords = MYSQL.query(ALL_KEYWORDS_SQL).map { |k| { name: k['keyword'], date: k['date'] } }
 keywords.each do |keyword|
-  puts "Processing #{keyword[:name]}"
 
   keyword_date = Date.strptime(keyword[:date].to_s, "%Y%m%d")
+  puts "Processing [#{keyword[:name]}] - #{keyword_date}"
 
   evaluation_result_1 = [keyword[:name]]
   evaluation_result_2 = [keyword[:name]]
@@ -116,17 +141,18 @@ keywords.each do |keyword|
       evaluation_result_2 += [0, 0]
     else
       puts " - doing evaluation 1"
-      result = evaluate_1(pages, keyword_date)
+      popular_pages = evaluate_1(pages, keyword_date)
       evaluation_result_1 << pages.length
-      evaluation_result_1 << result
-      # puts " - doing evaluation 2"
-      # result = evaluate_2(pages, keyword_date)
-      # evaluation_result_2 << result
+      evaluation_result_1 << popular_pages
+      puts " - doing evaluation 2"
+      total_page_views, contributed_page_views = evaluate_2(pages, keyword_date)
+      evaluation_result_2 << total_page_views
+      evaluation_result_2 << contributed_page_views
     end
   end
 
   write_evaluation_file(EVALUATION_1_FILE, evaluation_result_1)
-  # write_evaluation_file(EVALUATION_2_FILE, evaluation_result_2)
+  write_evaluation_file(EVALUATION_2_FILE, evaluation_result_2)
 end
 
 
