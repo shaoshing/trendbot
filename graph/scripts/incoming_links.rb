@@ -21,9 +21,9 @@ File.read('graph/data/level1_pages.txt').lines.each do |line|
   level1_title_map_id[title.upcase] = id
 end
 
-BATCH_SIZE = 200
+BATCH_SIZE = 10000
 total_page_count = mysql_client.query('SELECT count(*) FROM Page;').first['count(*)'].to_i
-processed_page_count = 1513100 # 1_162_700
+processed_page_count = 120000 # 3138700 # 1_162_700
 
 while processed_page_count < total_page_count
   puts "Processing #{processed_page_count + BATCH_SIZE} of #{total_page_count}"
@@ -43,22 +43,26 @@ while processed_page_count < total_page_count
       link = link.upcase
       next unless level1_title_map_id[link]
 
-      puts ' -- ' + page['name'] + ' > ' + link
+      # puts ' -- ' + page['name'] + ' > ' + link
       links << { page: page, level1_page_id: level1_title_map_id[link] }
     end
   end
 
-  links.each do |link|
+  links.each_with_index do |link, index|
+    ((index + 1) % 60) == 0 ? puts('.') : print('.')
     # Create incoming page node
     page_id = link[:page]['id']
     page_title = link[:page]['name']
     level1_page_id = link[:level1_page_id]
+
     neo4j_client.execute_query("
-      MERGE (p:Page {id: #{page_id}, title: \"#{mysql_client.escape(page_title)}\"})")
-    # Create relation
+        MERGE (p:Page {id: #{page_id}, title: \"#{mysql_client.escape(page_title)}\"})")
+
     neo4j_client.execute_query("
         MATCH (p:Page {id: #{page_id}}), (l:Page {id: #{level1_page_id}})
         MERGE p -[:INCOMING]-> l")
   end
+
+  puts ''
 end
 

@@ -77,7 +77,7 @@
       <file leaf-file-name="Graph.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/iub/trendbot/graph/Graph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="54" selection-start="1503" selection-end="1503" vertical-scroll-proportion="0.0" vertical-offset="926" max-vertical-offset="1425">
+            <state line="26" column="46" selection-start="669" selection-end="669" vertical-scroll-proportion="0.0" vertical-offset="146" max-vertical-offset="1425">
               <folding />
             </state>
           </provider>
@@ -95,7 +95,7 @@
       <file leaf-file-name="Examples.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Examples.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="25" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.7214429" vertical-offset="300" max-vertical-offset="810">
+            <state line="15" column="19" selection-start="408" selection-end="408" vertical-scroll-proportion="0.36072144" vertical-offset="0" max-vertical-offset="900">
               <folding />
             </state>
           </provider>
@@ -540,7 +540,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20029895" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32780612" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32780612" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908162" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -683,14 +683,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/iub/trendbot/graph/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="54" selection-start="1503" selection-end="1503" vertical-scroll-proportion="0.0" vertical-offset="926" max-vertical-offset="1425">
+        <state line="26" column="46" selection-start="669" selection-end="669" vertical-scroll-proportion="0.0" vertical-offset="146" max-vertical-offset="1425">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Examples.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="25" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.7214429" vertical-offset="300" max-vertical-offset="810">
+        <state line="15" column="19" selection-start="408" selection-end="408" vertical-scroll-proportion="0.36072144" vertical-offset="0" max-vertical-offset="900">
           <folding />
         </state>
       </provider>

@@ -5,7 +5,7 @@ require 'neography'
 require 'mysql2'
 require 'json'
 
-CATEGORY_LEVEL = 3
+CATEGORY_LEVEL = 1
 
 mysql_client = Mysql2::Client.new(
   host: 'localhost',
@@ -50,7 +50,7 @@ pages = File.read('graph/data/level1_pages.txt').lines
 
 # Skipped
 # level 2 106
-start_page_index = 350
+start_page_index = 0
 (start_page_index...pages.size).each do |index|
   line = pages[index]
   level1_id, level1_title = line.strip.split(', ', 2)
