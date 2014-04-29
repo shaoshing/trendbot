@@ -22,8 +22,8 @@ RELATIONS = {
 FIND_PAGES_SQL = %(SELECT page FROM pages WHERE keyword = "%s" AND relation IN (%s);)
 def find_pages(keyword, relation)
   escaped_keyword = MYSQL.escape(keyword)
-  pages = MYSQL.query(FIND_PAGES_SQL % [escaped_keyword, relation.join(", ")]).map { |p| p['page'] }
-  pages
+  pages = MYSQL.query(FIND_PAGES_SQL % [escaped_keyword, relation.join(', ')])
+  pages.map { |p| p['page'].upcase }
 end
 
 EVALUATION_1_FILE = 'tmp/evaluation1-popularity.csv'
@@ -41,8 +41,9 @@ end
 
 DAYS_BACK = 2
 DATE_FORMAT_SQL = '%Y%m%d'
-PAGE_VIEWS_SQL = %(SELECT pagetitle, pageviewcount, DATE_FORMAT(datetime, "%s") AS date
-    FROM pagecount_test
+PAGE_VIEWS_SQL = %(
+    SELECT pagetitle, pageviewcount, DATE_FORMAT(datetime, "%s") AS date
+    FROM pagecount
     WHERE datetime >= "%s" AND datetime < "%s" AND pagetitle IN ("%s")
     )
 
@@ -69,14 +70,20 @@ def get_page_views(pages, date)
 
   # update actual page views from mysql
   beginning_of_date = date.prev_day(DAYS_BACK)
-  end_of_date = date.next_day(DAYS_BACK)
+  end_of_date = date.next_day(DAYS_BACK+1)
   escaped_pages = pages.map { |p| MYSQL.escape(p) }
   sql = PAGE_VIEWS_SQL % [DATE_FORMAT_SQL, beginning_of_date, end_of_date, escaped_pages.join('", "')]
 
   page_views = MYSQL.query(sql)
   page_views.each do |pv|
     date = pv['date'].to_i
-    views[pv['pagetitle']][date] += pv['pageviewcount']
+    page_title = pv['pagetitle'].upcase
+
+    # ANGEL_DI_MARIA
+    # ÁNGEL_DI_MARíA
+    next unless views[page_title]
+
+    views[page_title][date] += pv['pageviewcount']
   end
 
   CACHE[cache_key] = views
@@ -84,12 +91,17 @@ def get_page_views(pages, date)
 end
 
 # returns % of popular pages
-PAGE_VIEW_DIFF = 1000
+PAGE_VIEW_DIFF = 500
 def evaluate_1(pages, date)
   popular_page_count = 0
   views = get_page_views(pages, date)
   dateValue = date.strftime('%Y%m%d').to_i
   views.each do |title, v|
+    # puts "----"
+    # puts date
+    # puts title
+    # puts v
+    # puts "----"
     average = v.values.inject { |sum,x| sum + x } / v.values.length
     view_of_the_date = v[dateValue]
     popular_page_count += 1 if view_of_the_date > average + PAGE_VIEW_DIFF
@@ -118,11 +130,16 @@ def evaluate_2(pages, date)
     contributed_page_views += v[dateValue]
   end
 
-  return total_page_views, (contributed_page_views / total_page_views.to_f).round(3)
+  return total_page_views, (contributed_page_views / total_page_views.to_f).round(4)
 end
 
 MAXIMUM_PAGES = 400
-ALL_KEYWORDS_SQL = %(SELECT DISTINCT keyword, date FROM pages WHERE date >= 20140204 AND date <= 20140225 ORDER BY date)
+ALL_KEYWORDS_SQL = %(
+    SELECT DISTINCT keyword, date
+    FROM pages
+    WHERE date >= 20140203 AND date <= 20140213
+    ORDER BY date
+    )
 keywords = MYSQL.query(ALL_KEYWORDS_SQL).map { |k| { name: k['keyword'], date: k['date'] } }
 keywords.each do |keyword|
 
@@ -140,10 +157,10 @@ keywords.each do |keyword|
       evaluation_result_1 += [0, 0]
       evaluation_result_2 += [0, 0]
     else
-      puts " - doing evaluation 1"
-      popular_pages = evaluate_1(pages, keyword_date)
-      evaluation_result_1 << pages.length
-      evaluation_result_1 << popular_pages
+      # puts " - doing evaluation 1"
+      # popular_pages = evaluate_1(pages, keyword_date)
+      # evaluation_result_1 << pages.length
+      # evaluation_result_1 << popular_pages
       puts " - doing evaluation 2"
       total_page_views, contributed_page_views = evaluate_2(pages, keyword_date)
       evaluation_result_2 << total_page_views
