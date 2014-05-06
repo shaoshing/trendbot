@@ -1,0 +1,149 @@
+clear all;
+clc;
+
+filename = '\count_data\300PagesCount.xlsx';
+[ndata, text, alldata]  = xlsread(filename);
+% ndata(:,1)=[];
+pageGrandTotal=ndata(:,end);
+hourlyGrandTotal=ndata(end,:); %get rid of grand total
+ndata(:,end)=[]; %get rid of grand total
+
+predHour=72;
+
+
+pageGrandTotal=sum(ndata,2);
+%%
+Y=[];
+T=[];
+
+for i=107%1:size(ndata,1)
+    
+    Y=ndata(i,:)';
+    T=[1:length(ndata(i,:))]';
+    %linear regression
+    mdl=LinearModel.fit(T,Y,'linear');
+    linearRegRMSE(i,:)=[mdl.RMSE];
+    linearPredictValue=polyval([double(mdl.Coefficients(2,1)) double(mdl.Coefficients(1,1))],T);
+    
+    hFig = figure(1);
+    subplot(2,1,1)
+    set(gca,'fontsize',12);
+    set(hFig, 'Position', [50 50 1200 1000]);
+    set(gcf,'PaperPositionMode','auto')
+    plot(T,Y,'color',[.7,.7,.7],'linewidth',2)
+    hold on
+    plot(T,linearPredictValue,'-','linewidth',2)
+    legend('Observation','Model')
+    title([text{i+1,1} ' Observations & Regression model'])
+    hold off
+    subplot(2,1,2)
+    set(gca,'fontsize',12);
+    plot(mdl.Residuals.Raw,'k');
+    title([text{i+1,1} ' Residuals'])
+    print('-dpng','-r200',['Z:\Download\LINEAR\' num2str(i+1) '_' text{i+1,1} ])
+    clf;
+    
+    %ARIMA Model
+    
+    model = arima(2,1,0);
+    fit  = estimate(model,Y(1:end-predHour));
+    [res,~,LogL]=infer(fit,Y(1:end-predHour));
+    arimaRMSE(i)=(sum(res.^2)/length(res))^0.5;
+    mval=Y(1:end-predHour)-res;%get model values
+    %
+    [Yf YMSE] = forecast(fit,predHour,'Y0',Y(1:end-predHour));
+    lower = Yf - 1.96*sqrt(YMSE);
+    upper = Yf + 1.96*sqrt(YMSE);
+    
+    startEpoc=length(Y)-predHour+1;
+    hFig = figure(1);
+    set(hFig, 'Position', [50 50 1200 1000]);
+    set(gcf,'PaperPositionMode','auto')
+    plot(Y)
+    ylim([-50 100])
+    %calculate Presiction RMSE
+    preResidual= Yf - Y(startEpoc:end);
+    arimaPreRMSE(i)=(sum(preResidual.^2)/length(preResidual))^0.5;
+    %
+    hFig1 = figure(2);
+    set(hFig1, 'Position', [50 50 1200 1000]);
+    set(gcf,'PaperPositionMode','auto')
+    set(gca,'fontsize',12);
+    h1 = plot(Y,'Color',[.6,.6,.6],'LineWidth',2);
+    hold on
+    h2 = plot(mval,'b-','LineWidth',2);
+    h3 = plot(T(startEpoc:end),lower,'r:','LineWidth',2);
+    plot(T(startEpoc:end),upper,'r:','LineWidth',2)
+    h4 = plot(T(startEpoc:end),Yf,'k','LineWidth',2);
+    legend([h1 h2 h3 h4],'Observations','ARIMA model','95% Interval','Forecast',...
+        'Location','NorthWest')
+    title([text{i+1,1} ' Forecast'])
+    hold off
+    print('-dpng','-r200',['Z:\Download\ArimaPred\' num2str(i+1) '_' text{i+1,1} ])
+    clf;
+    %   Arima residual, autocorrelation
+    hFig = figure(1);
+    set(hFig, 'Position', [50 50 1200 1000]);
+    set(gcf,'PaperPositionMode','auto')
+    subplot(3,1,1)
+    set(gca,'fontsize',20);
+    plot(res)
+    ylim([-100 100])
+    title('Residuals')
+    subplot(3,1,2)
+    set(gca,'fontsize',20);
+    hist(res)
+    
+    title('Residuals Histogram')
+    subplot(3,1,3)
+    set(gca,'fontsize',20);
+    autocorr(res)
+    ylim([-1 1])
+    title('Residuals Autocorrelation Function')
+    print('-dpng','-r200',['Z:\Download\Arima\' num2str(i+1) '_' text{i+1,1} ])
+    clf;
+    
+end
+
+%Residuals
+hFig = figure(2);
+set(hFig, 'Position', [50 50 1200 1000]);
+set(gcf,'PaperPositionMode','auto')
+subplot(3,1,1)
+set(gca,'fontsize',12);
+ylim([0 3e4])
+bar(linearRegRMSE)
+title('Linear Model RMSE')
+subplot(3,1,2)
+set(gca,'fontsize',12);
+bar(arimaRMSE)
+ylim([0 3e4])
+title('Arima Model RMSE')
+subplot(3,1,3)
+set(gca,'fontsize',12);
+plot(linearRegRMSE-arimaRMSE','.')
+title('RMSE Difference of linear & Arima')
+%
+%histogram of residuals
+hFig = figure(3);
+set(hFig, 'Position', [50 50 1200 1000]);
+set(gcf,'PaperPositionMode','auto')
+subplot(2,1,1)
+set(gca,'fontsize',20);
+hist(linearRegRMSE,[0:1000:30000])
+grid on;
+title('Linear Model RMSE Histogram')
+xlabel('RMSE')
+ylabel('Number of observations')
+xlim([-2000 3e4])
+ylim([0 300])
+subplot(2,1,2)
+set(gca,'fontsize',20);
+hist(arimaRMSE,[0:1000:30000])
+grid on;
+title('Arima Model RMSE Histogram')
+xlim([-2000 3e4])
+ylim([0 300])
+xlabel('RMSE')
+ylabel('Number of observations')
+
